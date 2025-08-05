@@ -20,7 +20,7 @@ func main() {
 	var (
 		cantidad_pesos, cantidad_dolares, cotizacion float64
 	)
-
+	fmt.Print("nashe")
 	fmt.Println("Ingrese la cotizacion del dolar a dia de hoy: ")
 	fmt.Scan(&cotizacion)
 	fmt.Print("Ingrese la cantidad de pesos que desea cambiar: ")
