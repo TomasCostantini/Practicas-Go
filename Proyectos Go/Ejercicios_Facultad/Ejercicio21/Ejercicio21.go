@@ -1,6 +1,5 @@
 /*
-	Guia de ejercicios GO:
-
+Guia de ejercicios GO:
 Ejercicio 21:
 Leer 5 números e indicar por cada uno si es múltiplos de 3 y no de 5. Para ello crear una función que se
 llame “verificarMultiplo” que reciba 2 parámetro:
@@ -12,10 +11,19 @@ El programa a desarrollar deberá implementar la función para resolver el probl
 */
 package main
 
+import "fmt"
+
 func main() {
+	var (
+		vector [5] int
+		inicio int
+		fin    int = 5
+		numero int
+	)
 
-}
-
-func verificarMultiplo() {
-
+	for inicio = 0; inicio < fin; inicio++ {
+		fmt.Println("Ingrese un numero entero: ")
+		fmt.Scan(&vector[inicio])
+		fmt.Print(inicio,":", numero)
+	}
 }
