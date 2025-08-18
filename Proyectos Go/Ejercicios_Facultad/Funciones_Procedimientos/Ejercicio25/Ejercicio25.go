@@ -24,9 +24,9 @@ func main() {
 
 	cargarVector(&vectorA)
 	cargarVector(&vectorB)
-	ordenarVector(&vectorA)
-	ordenarVector(&vectorB)
-	intercalarVectores(&vectorA, &vectorB, &vectorC)
+	//ordenarVector(&vectorA)
+	//ordenarVector(&vectorB)
+	//intercalarVectores(&vectorA, &vectorB, &vectorC)
 
 	fmt.Println("Vector A:", vectorA)
 	fmt.Println("Vector B:", vectorB)
