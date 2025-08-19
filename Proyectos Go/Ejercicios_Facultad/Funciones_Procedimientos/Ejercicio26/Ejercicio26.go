@@ -21,3 +21,6 @@ procedimiento deberá recibir como parámetro por referencia el vector a ordenar
 ● Ordenar el vector REM con el procedimiento desarrollado en el punto anterior e imprimir el
 vector ordenado.
 */
+
+package main
+import "fmt"
