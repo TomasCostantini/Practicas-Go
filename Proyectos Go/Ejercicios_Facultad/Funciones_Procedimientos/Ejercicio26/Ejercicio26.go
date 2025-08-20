@@ -23,4 +23,49 @@ vector ordenado.
 */
 
 package main
+
 import "fmt"
+
+func main() {
+	var REM [6]int
+	var mobile int
+	var distance int
+	var total int
+
+	for {
+		fmt.Print("Ingrese el número de móvil (0 para finalizar): ")
+		fmt.Scan(&mobile)
+		if mobile == 0 {
+			break
+		}
+		if mobile < 1 || mobile > 6 {
+			fmt.Println("Número de móvil inválido. Debe ser entre 1 y 6.")
+			continue
+		}
+		fmt.Print("Ingrese la cantidad de cuadras recorridas: ")
+		fmt.Scan(&distance)
+		REM[mobile-1] += distance
+	}
+
+	fmt.Println("Nro. móvil      Cant. total cuadras            Importe recaudado")
+	for i := 0; i < 6; i++ {
+		total = REM[i] * 500
+		fmt.Printf("%d               %d                             %d\n", i+1, REM[i], total)
+	}
+
+	ordenarVector(&REM)
+	fmt.Println("Vector ordenado:")
+	for i := 0; i < 6; i++ {
+		fmt.Printf("%d ", REM[i])
+	}
+}
+
+func ordenarVector(v *[6]int) {
+	for i := 0; i < len(v)-1; i++ {
+		for j := i + 1; j < len(v); j++ {
+			if v[i] < v[j] {
+				v[i], v[j] = v[j], v[i]
+			}
+		}
+	}
+}
