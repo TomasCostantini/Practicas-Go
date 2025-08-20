@@ -28,23 +28,23 @@ import "fmt"
 
 func main() {
 	var REM [6]int
-	var mobile int
-	var distance int
+	var movil int
+	var distancia int
 	var total int
 
 	for {
-		fmt.Print("Ingrese el número de móvil (0 para finalizar): ")
-		fmt.Scan(&mobile)
-		if mobile == 0 {
+		fmt.Print("Ingrese el número de móvil: ")
+		fmt.Scan(&movil)
+		if movil == 0 {
 			break
 		}
-		if mobile < 1 || mobile > 6 {
+		if movil < 1 || movil > 6 {
 			fmt.Println("Número de móvil inválido. Debe ser entre 1 y 6.")
 			continue
 		}
 		fmt.Print("Ingrese la cantidad de cuadras recorridas: ")
-		fmt.Scan(&distance)
-		REM[mobile-1] += distance
+		fmt.Scan(&distancia)
+		REM[movil-1] += distancia
 	}
 
 	fmt.Println("Nro. móvil      Cant. total cuadras            Importe recaudado")
