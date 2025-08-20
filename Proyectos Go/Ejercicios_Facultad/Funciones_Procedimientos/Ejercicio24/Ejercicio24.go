@@ -56,6 +56,7 @@ func main() {
 
 		if resultado == 0 {
 			fmt.Println("Adivinaste el número.")
+			imprimirDesempeno(intentos)
 			break
 		} else {
 			imprimirResultado(resultado, intentos)
@@ -80,6 +81,10 @@ func imprimirResultado(resultado, intentos int) {
 	case 1:
 		fmt.Println("El número a adivinar es menor.")
 	}
+
+}
+
+func imprimirDesempeno(intentos int) {
 	if intentos <= 5 {
 		fmt.Println("¡Eres un jugador excelente!")
 	} else if intentos <= 15 {
