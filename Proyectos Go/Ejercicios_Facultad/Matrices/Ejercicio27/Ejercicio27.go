@@ -8,10 +8,14 @@ package main
 
 import "fmt"
 
+const (
+	filas    = 4
+	columnas = 4
+)
+
 func main() {
 	var (
-		A    [4][4]int
-		suma int
+		A [filas][columnas]int
 	)
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
@@ -19,13 +23,12 @@ func main() {
 			fmt.Scan(&A[i][j])
 		}
 	}
-	suma = sumarElementos(A)
-	fmt.Println("La suma de los elementos de la matriz es:", suma)
+	fmt.Println("La suma de todos los elementos de la matriz es:", sumarElementos(A))
 }
 
-func sumarElementos(matriz [4][4]int) int {
+func sumarElementos(matriz [filas][columnas]int) int {
 	var suma int
-	for i := 0; i < 4; i++ {
+	for i := 0; i < filas; i++ {
 		for j := 0; j < 4; j++ {
 			suma += matriz[i][j]
 		}
