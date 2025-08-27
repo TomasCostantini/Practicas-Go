@@ -1,6 +1,6 @@
 /*
 Guia de ejercicios Go.
-Ejercicio 1:
+Ejercicio 27:
 Cargar una matriz A de 4x4. Crear una función que reciba como parámetro la matriz cargada y devuelva como
 resultado la suma de sus elementos. Imprimir la suma.
 */

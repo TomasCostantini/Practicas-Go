@@ -1,5 +1,6 @@
 /*
 Guia de ejercicios GO
+Ejercicio 20:
 Leer los siguientes datos: cantidad de dólares a comprar y cantidad de pesos argentinos disponibles y
 cotización del día.
 Crear una función que devuelva un resultado booleado que indique si la cantidad de pesos con los que
