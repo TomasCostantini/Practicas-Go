@@ -31,4 +31,5 @@ func main() {
 	fmt.Println(subtotal)
 	fmt.Println("El precio total de la compra es: ")
 	fmt.Println(total)
+	fmt.Println("Programa finalizado")
 }

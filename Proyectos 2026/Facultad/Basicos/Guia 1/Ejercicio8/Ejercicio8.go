@@ -11,11 +11,12 @@ import "fmt"
 var hora, minutos, segundos int
 
 func main() {
-fmt.Println("Ingrese las horas: ")
-fmt.Scan(&hora)
-fmt.Println("Ingrese los minutos: ")
-fmt.Scan(&minutos)
-fmt.Println("Ingrese los segundos: ")
-fmt.Scan(&segundos)
-fmt.Printf("%02d:%02d:%02d\n", hora, minutos, segundos)
+	fmt.Println("Ingrese las horas: ")
+	fmt.Scan(&hora)
+	fmt.Println("Ingrese los minutos: ")
+	fmt.Scan(&minutos)
+	fmt.Println("Ingrese los segundos: ")
+	fmt.Scan(&segundos)
+	fmt.Printf("%02d:%02d:%02d\n", hora, minutos, segundos)
+	fmt.Println("Programa finalizado")
 }
