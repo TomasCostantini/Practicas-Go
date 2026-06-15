@@ -17,4 +17,5 @@ func main() {
 	} else {
 		fmt.Println("El numero ingresado es impar")
 	}
+	fmt.Println("Programa finalizado")
 }
