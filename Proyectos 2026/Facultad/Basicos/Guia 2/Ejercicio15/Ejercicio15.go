@@ -12,13 +12,13 @@ package main
 import "fmt"
 
 var (
-	nombre, nombremayor, nombremenor                                         string
+	nombre, nombremayor, nombremenor                               string
 	edad, edadmayor, edadmenor, cantidadmenor, cantidadentre, suma int
-	promedio float32 
+	promedio                                                       float32
 )
 
 const (
-	alumnos = 4
+	alumnos = 10
 )
 
 func main() {
