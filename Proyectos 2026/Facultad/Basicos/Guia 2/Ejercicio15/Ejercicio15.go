@@ -59,4 +59,5 @@ func main() {
 	fmt.Println("La cantidad de alumnos menores a 12 es: ", cantidadmenor)
 	fmt.Println("La cantidad de alumnos entre 10 y 16 es: ", cantidadentre)
 	fmt.Println("El promedio de edades es: ", promedio)
+	fmt.Println("Programa finalizado")
 }
