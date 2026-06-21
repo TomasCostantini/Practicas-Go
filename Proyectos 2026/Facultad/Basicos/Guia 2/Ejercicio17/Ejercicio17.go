@@ -36,7 +36,7 @@ func main() {
 			p2++
 
 		} else if partido == 3 {
-			if genero == "M" || genero == "m" {
+			if genero == "H" || genero == "h" {
 				varonestres++
 			}
 			p3++
