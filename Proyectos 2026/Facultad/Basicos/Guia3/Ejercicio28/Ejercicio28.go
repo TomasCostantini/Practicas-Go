@@ -1,18 +1,19 @@
 /*Guia de ejercicios GO:
-Ejercicio 20: 
-Se lee la siguiente información: Sexo, Estado Civil y Edad en donde: sexo podrá tomar los valores H o M,
-estado civil S (soltero), E (separado), C (casado) y V (viudo). Se pide:
-• Contar la cantidad de hombres casados mayores de 28 años.
-• Contar la cantidad de mujeres solteras menores de 25 años.
-• Calcular el promedio de edad de los hombres casados.
-• Contar cuantos hombres y mujeres se ingresaron.
-• Contar la cantidad de hombres viudos
-El final de la lectura viene indicado por un “S” en el campo sexo.
+Ejercicio 28:
+Se tienen las edades de 10 alumnos de un curso almacenadas en un vector ALU, se deberá realizar lo
+siguiente:
+a) Cargar el vector ALU
+b) Encontrar la mayor y la menor edad del curso.
+c) Encontrar la cantidad de estudiantes que se encuentran en las siguientes categorías:
+
+• Menores o igual que 12
+• entre 13 y 16 (inclusive)
+• mayor o igual que 17
+d) Ordenar el vector ALU de forma ascendente
 */
 
 package main
-import "fmt"
 
-func main(){
+func main() {
 
 }
