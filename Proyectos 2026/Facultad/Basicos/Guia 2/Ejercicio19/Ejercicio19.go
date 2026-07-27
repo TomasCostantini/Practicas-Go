@@ -18,6 +18,59 @@ conocer:
 • El importe a pagarle a cada promotor
 • La cantidad de promotores de cada categoría
 */
+
 package main
 
-func main() {}
+import "fmt"
+
+func main() {
+	var (
+		cantidadpromotores, excursiones, valor int
+		promotoresA                            int = 0
+		promotoresB                            int = 0
+		promotoresC                            int = 0
+		promotoresD                            int = 0
+	)
+
+	fmt.Println("Ingrese la cantidad de promotores: ")
+	fmt.Scan(&cantidadpromotores)
+
+	for i := 0; i < cantidadpromotores; i++ {
+		fmt.Println("Ingrese la cantidad de excursiones vendidas :")
+		fmt.Scan(&excursiones)
+
+		if excursiones < 10 {
+			promotoresA++
+			valor = excursiones * 1000
+			fmt.Println("Este promotor es de categoria A")
+			fmt.Println("El valor de las comisiones para este promotor es de: ", valor)
+		}
+
+		if excursiones >= 10 && excursiones < 50 {
+			promotoresB++
+			valor = excursiones * 1500
+			fmt.Println("Este promotor es de categoria B")
+			fmt.Println("El valor de las comisiones para este promotor es de: ", valor)
+		}
+
+		if excursiones >= 50 && excursiones < 100 {
+			promotoresC++
+			valor = excursiones * 1700
+			fmt.Println("Este promotor es de categoria C")
+			fmt.Println("El valor de las comisiones para este promotor es de: ", valor)
+		}
+		if excursiones > 100 {
+			promotoresD++
+			valor = excursiones * 1900
+			fmt.Println("Este promotor es de categoria D")
+			fmt.Println("El valor de las comisiones para este promotor es de: ", valor)
+		}
+	}
+
+	fmt.Println("Cantidad de promotores por categoria: ")
+	fmt.Println("Categoria A: ", promotoresA)
+	fmt.Println("Categoria B: ", promotoresB)
+	fmt.Println("Categoria C: ", promotoresC)
+	fmt.Println("Categoria D: ", promotoresD)
+
+}

@@ -9,3 +9,40 @@ alumno ingresado logró la condición de regularidad teniendo en cuenta:
 Determinar además la cantidad total de alumnos, cuántos de ellos regularizaron la materia y el porcentaje
 que éste grupo representa sobre el total. Imprimir los resultados.
 */
+package main
+
+import "fmt"
+
+var (
+	matricula, primernota, segundanota, tercernota, porcentaje int
+	regulares                                                  = 0
+	alumnos                                                    = 0
+)
+
+func main() {
+	fmt.Println("Ingrese el numero de matricula: ")
+	fmt.Scan(&matricula)
+	for matricula > 0 {
+		fmt.Println("Ingrese la primera nota: ")
+		fmt.Scan(&primernota)
+		fmt.Println("Ingrese la segunda nota: ")
+		fmt.Scan(&segundanota)
+		fmt.Println("Ingrese la tercer nota: ")
+		fmt.Scan(&tercernota)
+
+		if (primernota > 6 && segundanota > 6) || (primernota > 6 && tercernota > 6) || (segundanota > 6 && tercernota > 6) {
+			fmt.Println("Alumno Regular")
+			regulares++
+		} else {
+			fmt.Println("Alumno no aprobado")
+		}
+		alumnos++
+		fmt.Println("Ingrese el numero de matricula: ")
+		fmt.Scan(&matricula)
+	}
+	porcentaje = (regulares / alumnos) * 100
+	fmt.Println("El total de alumnos es: ", alumnos)
+	fmt.Println("La cantidad de alumnos regulares es ", regulares)
+	fmt.Println("El prcentaje de alumnos aprobados es de: ", porcentaje)
+	fmt.Println("Programa finalizado.")
+}
