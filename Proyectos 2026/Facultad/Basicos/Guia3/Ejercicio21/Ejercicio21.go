@@ -10,6 +10,8 @@ correspondencia con el número de móvil. Se pide:
 
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	fmt.Println("nashe")
 }
