@@ -53,8 +53,9 @@ func main() {
 					mujeres_soteras_menores++
 				}
 			}
-
 		}
+		fmt.Println("Ingrese el sexo de la persona (M o H): ")
+		fmt.Scan(&sexo)
 	}
 	fmt.Println("La cantidad total de hombres es: ", cantidad_hombres)
 	fmt.Println("La cantidad total de hombres casados mayores a 28 años es: ", casados_mayores)
