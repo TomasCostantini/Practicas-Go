@@ -29,7 +29,7 @@ var (
 func main() {
 	fmt.Println("Ingrese el sexo de la persona (M o H): ")
 	fmt.Scan(&sexo)
-	for sexo != "S" || sexo != "s" {
+	for sexo != "S" && sexo != "s" {
 		fmt.Println("Ingrese la edad de la persona: ")
 		fmt.Scan(&edad)
 		fmt.Println("Ingrese el estado civil de la persona(S:soltero, C:casado,V: viudo): ")
