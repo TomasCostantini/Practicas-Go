@@ -12,6 +12,41 @@ package main
 
 import "fmt"
 
+const (
+	autos           = 6
+	precioporcuadra = 1000
+)
+
+var (
+	movil, cuadras, movilviajemaslargo int
+	cantidadtres                       = 0
+	importecinco                       = 0
+	i                                  = 0
+)
+
 func main() {
-	fmt.Println("nashe")
+	fmt.Println("Ingrese el numero del movil: ")
+	fmt.Scan(&movil)
+	for movil != 0 {
+		fmt.Println("Ingrese las cuadras recorridas: ")
+		fmt.Scan(&cuadras)
+
+		if i == 0 {
+			movilviajemaslargo = movil
+		} else {
+			if movil == 5 {
+				importecinco = importecinco + (cuadras * precioporcuadra)
+			}
+			if movil == 3 {
+				cantidadtres++
+			}
+		}
+		i++
+		fmt.Println("Ingrese el numero del movil: ")
+		fmt.Scan(&movil)
+	}
+	fmt.Println("El movil con el viaje mas largo fue: ", movilviajemaslargo)
+	fmt.Println("La cantidad de viajes realizados por el movil 3 es: ", cantidadtres)
+	fmt.Println("El importe recaudado por el movil 5 fue de: ", importecinco)
+	fmt.Println("Programa finalizado")
 }
