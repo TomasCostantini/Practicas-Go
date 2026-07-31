@@ -10,7 +10,7 @@ import "fmt"
 func main() {
 	var numeros [5]int
 	var suma int
-	var promedio float64
+	var promedio int
 
 	for i := 0; i < len(numeros); i++ {
 		fmt.Printf("Ingrese el número %d: ", i+1)
@@ -19,7 +19,5 @@ func main() {
 	for i := 0; i < len(numeros); i++ {
 		suma += numeros[i]
 	}
-	promedio = float64(suma) / float64(len(numeros))
-	fmt.Println("La suma es:", suma)
-	fmt.Printf("El promedio es: %.2f\n", promedio)
+
 }
