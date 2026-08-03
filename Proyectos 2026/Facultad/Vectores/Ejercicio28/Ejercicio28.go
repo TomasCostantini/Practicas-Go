@@ -35,6 +35,13 @@ func main() {
 		if i == 0 {
 			mayor = ALU[i]
 			menor = ALU[i]
+		} else {
+			if ALU[i] > mayor {
+				mayor = ALU[i]
+			}
+			if ALU[i] < menor {
+				mayor = ALU[i]
+			}
 		}
 	}
 }
