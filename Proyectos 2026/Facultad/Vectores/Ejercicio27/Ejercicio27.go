@@ -22,8 +22,8 @@ func main() {
 		vector[i] = n
 	}
 
-	for i := 0; i < indice; i++ {
-		for z := indice + 1; z < indice-1; z++ {
+	for i := 0; i < indice-1; i++ {
+		for z := i + 1; z < indice; z++ {
 			if vector[i] > vector[z] {
 				aux = vector[i]
 				vector[i] = vector[z]
