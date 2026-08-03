@@ -46,15 +46,16 @@ func main() {
 				mayor = ALU[i]
 			}
 		}
+		switch {
+		case edad < 13:
+			menordoce++
+		case edad >= 13 && edad < 17:
+			entre++
+		case edad > 17:
+			mayoritario++
+		}
 	}
-	switch {
-	case edad < 13:
-		menordoce++
-	case edad >= 13 && edad < 17:
-		entre++
-	case edad > 17:
-		mayoritario++
-	}
+
 	for indiceA := 0; indiceA < indice; indiceA++ {
 		for indiceB := indiceA + 1; indice < indice-1; indiceB++ {
 			if ALU[indiceB] < ALU[indiceA] {
