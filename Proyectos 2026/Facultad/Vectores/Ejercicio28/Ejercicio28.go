@@ -21,8 +21,11 @@ func main() {
 		indice = 10
 	)
 	var (
-		edad, mayor, menor, menordoce, entre, mayoritario, aux int
-		ALU                                                    [indice]int
+		edad, mayor, menor, aux int
+		ALU                     [indice]int
+		menordoce               = 0
+		mayoritario             = 0
+		entre                   = 0
 	)
 
 	for i := 0; i < indice; i++ {
@@ -44,4 +47,18 @@ func main() {
 			}
 		}
 	}
+	switch {
+	case edad < 13:
+		menordoce++
+	case edad >= 13 && edad < 17:
+		entre++
+	case edad > 17:
+		mayoritario++
+	}
+
+	fmt.Println("El alumno menor es: ", menor)
+	fmt.Println("El alumno mayor es: ", mayor)
+	fmt.Println("La cantidad de alumnos menores de 12 años es: ", menordoce)
+	fmt.Println("La cantidad de alumnos con edad entre 13 y 16 es:", entre)
+	fmt.Println("La cantidad de alumnos mayores a 17 años es: ", mayoritario)
 }
