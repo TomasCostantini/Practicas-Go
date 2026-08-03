@@ -8,16 +8,22 @@ package main
 import "fmt"
 
 func main() {
-	var numeros [5]int
-	var suma int
-	var promedio int
+	var (
+		numeros  [5]int
+		suma, n  int
+		promedio float64
+	)
 
-	for i := 0; i < len(numeros); i++ {
-		fmt.Printf("Ingrese el número %d: ", i+1)
-		fmt.Scan(&numeros[i])
+	for i := 0; i < 5; i++ {
+		fmt.Println("Ingrese un número: ")
+		fmt.Scan(&n)
+		numeros[i] = n
 	}
-	for i := 0; i < len(numeros); i++ {
+
+	for i := 0; i < 5; i++ {
 		suma += numeros[i]
 	}
-
+	promedio = float64(suma) / float64(5)
+	fmt.Println("La suma es:", suma)
+	fmt.Println("El promedio es:", promedio)
 }
