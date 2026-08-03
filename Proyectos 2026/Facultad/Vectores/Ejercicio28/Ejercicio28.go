@@ -31,4 +31,10 @@ func main() {
 		ALU[i] = edad
 	}
 
+	for i := 0; i < indice; i++ {
+		if i == 0 {
+			mayor = ALU[i]
+			menor = ALU[i]
+		}
+	}
 }
