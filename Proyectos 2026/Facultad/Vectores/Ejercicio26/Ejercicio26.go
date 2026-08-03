@@ -22,7 +22,7 @@ func main() {
 	}
 	for i := 0; i < 10; i++ {
 		if vectorA[i] > 0 {
-			vectorB[indiceB] = vectorA[i]
+			vectorB = append(vectorB, vectorA[i])
 			indiceB++
 		}
 	}
@@ -30,4 +30,5 @@ func main() {
 	for i := 0; i < indiceB; i++ {
 		fmt.Print(vectorB[i])
 	}
+	fmt.Println("Programa finalizado")
 }
