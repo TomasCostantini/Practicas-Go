@@ -49,7 +49,7 @@ func main() {
 		switch {
 		case edad < 13:
 			menordoce++
-		case edad >= 13 && edad < 17:
+		case edad > 12 && edad < 17:
 			entre++
 		case edad > 17:
 			mayoritario++
