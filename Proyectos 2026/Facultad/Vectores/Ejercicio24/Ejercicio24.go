@@ -6,6 +6,26 @@ Imprimir la suma.
 
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	var (
+		numeros [7]int
+		n       int
+		suma    = 0
+	)
+
+	for i := 0; i < 6; i++ {
+		fmt.Println("Ingrese un numero: ")
+		fmt.Scan(&n)
+		numeros[i] = n
+	}
+
+	for i := 0; i < 6; i++ {
+		if numeros[i] != i {
+			suma = suma + numeros[i]
+		}
+	}
+	fmt.Println("La suma total es: ", suma)
+	fmt.Println("Programa finalizado")
 }
