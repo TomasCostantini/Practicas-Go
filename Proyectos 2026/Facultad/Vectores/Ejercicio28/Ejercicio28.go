@@ -18,7 +18,7 @@ import "fmt"
 
 func main() {
 	const (
-		indice = 4
+		indice = 10
 	)
 	var (
 		edad, mayor, menor, aux int
