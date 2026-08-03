@@ -26,4 +26,5 @@ func main() {
 	promedio = float64(suma) / float64(5)
 	fmt.Println("La suma es:", suma)
 	fmt.Println("El promedio es:", promedio)
+	fmt.Println("Programa finalizado")
 }
