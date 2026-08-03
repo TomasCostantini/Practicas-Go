@@ -14,6 +14,21 @@ d) Ordenar el vector ALU de forma ascendente
 
 package main
 
+import "fmt"
+
 func main() {
+	const (
+		indice = 10
+	)
+	var (
+		edad, mayor, menor, menordoce, entre, mayoritario, aux int
+		ALU                                                    [indice]int
+	)
+
+	for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese la edad del alumno: ")
+		fmt.Scan(&edad)
+		ALU[i] = edad
+	}
 
 }
