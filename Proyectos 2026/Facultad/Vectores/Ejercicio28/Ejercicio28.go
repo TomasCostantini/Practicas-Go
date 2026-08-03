@@ -55,10 +55,25 @@ func main() {
 	case edad > 17:
 		mayoritario++
 	}
+	for indiceA := 0; indiceA < indice; indiceA++ {
+		for indiceB := indiceA + 1; indice < indice-1; indiceB++ {
+			if ALU[indiceB] < ALU[indiceA] {
+				aux = ALU[indiceB]
+				ALU[indiceB] = ALU[indiceA]
+				ALU[indiceA] = aux
+			}
+		}
+	}
 
 	fmt.Println("El alumno menor es: ", menor)
 	fmt.Println("El alumno mayor es: ", mayor)
 	fmt.Println("La cantidad de alumnos menores de 12 años es: ", menordoce)
 	fmt.Println("La cantidad de alumnos con edad entre 13 y 16 es:", entre)
 	fmt.Println("La cantidad de alumnos mayores a 17 años es: ", mayoritario)
+	fmt.Println("El vector ordenado: ")
+	for i := 0; i < indice; i++ {
+		fmt.Print(ALU[i])
+		fmt.Print(" , ")
+	}
+	fmt.Println("Programa finalizado")
 }
