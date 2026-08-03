@@ -28,4 +28,6 @@ func main() {
 			}
 		}
 	}
+	fmt.Println("El numero mayor es: ", mayor)
+	fmt.Println("Programa finalizado")
 }
