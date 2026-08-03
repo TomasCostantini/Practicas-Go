@@ -23,8 +23,8 @@ func main() {
 	}
 
 	for i := 0; i < indice; i++ {
-		for z := 1; z < indice-1; z++ {
-			if vector[i] < vector[z] {
+		for z := indice + 1; z < indice-1; z++ {
+			if vector[i] > vector[z] {
 				aux = vector[i]
 				vector[i] = vector[z]
 				vector[z] = aux
@@ -32,7 +32,8 @@ func main() {
 		}
 	}
 	for i := 0; i < indice; i++ {
-		fmt.Println(vector[i])
+		fmt.Print(vector[i])
+		fmt.Print(" , ")
 	}
 
 	fmt.Println("Programa finalizado")
