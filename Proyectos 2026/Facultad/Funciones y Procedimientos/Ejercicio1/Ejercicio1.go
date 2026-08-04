@@ -13,6 +13,7 @@ El fin de ingreso de datos viene dado por la cantidad de pesos = 0.
 La cotización del día se debe ingresar una sola vez.
 Imprimir por cada juego de datos ingresados, si alcanza o no para realizar la operación de cambio.
 */
+
 package main
 
 import "fmt"
