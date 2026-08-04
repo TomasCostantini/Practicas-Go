@@ -29,7 +29,7 @@ func main() {
 		tres            = 0
 	)
 
-	for i := 0; i < indice; i++ {
+	for i := 0; i < indice-1; i++ {
 		fmt.Println("Ingrese el numero de patente: ")
 		fmt.Scan(&patente)
 		fmt.Println("Ingrese el estado del vehiculo (0 auto funcionando; 1 está en el taller mecánico; 2 está en chapa y pintura y 3 fuera de funcionamiento.)")
