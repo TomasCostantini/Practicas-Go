@@ -15,6 +15,39 @@ Imprimir por cada juego de datos ingresados, si alcanza o no para realizar la op
 */
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	var (
+		cantidad_pesos, cantidad_dolares, cotizacion float64
+	)
+	fmt.Println("Ingrese la cotizacion del dolar a dia de hoy: ")
+	fmt.Scan(&cotizacion)
+	fmt.Print("Ingrese la cantidad de pesos que desea cambiar: ")
+	fmt.Scan(&cantidad_pesos)
+	for cantidad_pesos != 0 {
+		fmt.Println("Ingrese la cantidad de dolares que desea comprar: ")
+		fmt.Scan(&cantidad_dolares)
+
+		if operacion(cantidad_pesos, cantidad_dolares, cotizacion) == true {
+			fmt.Println("La transaccion es valida.")
+		} else {
+			fmt.Println("La transaccion es invalida.")
+		}
+
+		fmt.Println("Ingrese la cantidad de pesos que desea cambiar: ")
+		fmt.Scan(&cantidad_pesos)
+	}
+	fmt.Print("Programa finalizado")
+}
+
+func operacion(cantidad_pesos, cantidad_dolares, cotizacion float64) (validez bool) {
+	var operacion float64
+	operacion = cantidad_dolares * cotizacion
+	if operacion <= cantidad_pesos {
+		validez = true
+	} else {
+		validez = false
+	}
+	return validez
 }
