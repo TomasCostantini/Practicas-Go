@@ -41,7 +41,7 @@ func main() {
 		switch {
 		case vector[i+1] == 0:
 			cero = cero + 1
-			estadocero[i] = vector[i]
+			estadocero = append(estadocero, vector[i])
 		case vector[i+1] == 1:
 			uno = uno + 1
 
@@ -54,4 +54,12 @@ func main() {
 		}
 	}
 
+	fmt.Println("Cantidad de vehiculos en estado 1: ", uno)
+	fmt.Println("Cantidad de vehiculos en estado 2: ", dos)
+	fmt.Println("Cantidad de vehiculos en estado 3: ", tres)
+	fmt.Println("Cantidad de vehiculos en estado 0: ", cero)
+	for i := 0; i < indice; i++ {
+		fmt.Print(estadocero[i])
+		fmt.Print(" , ")
+	}
 }
