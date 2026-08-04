@@ -12,19 +12,47 @@ d) Imprimir el vector generado.
 */
 
 package main
-import "fmt"
-func main() {
-const(
-	indice=14
-)
-	var(
-patente, estado int
-)
 
-for i:=0; i<indice;i++{
-	fmt.Println("Ingrese el numero de patente: ")
-	fmt.Scan(&patente)
-	fmt.Println("Ingrese el estado del vehiculo (0 auto funcionando; 1 está en el taller mecánico; 2 está en chapa y pintura y 3 fuera de funcionamiento.)")
-	fmt.Scan(&estado)
-}
+import "fmt"
+
+func main() {
+	const (
+		indice = 14
+	)
+	var (
+		vector          [14]int
+		patente, estado int
+		cero            = 0
+		uno             = 0
+		dos             = 0
+		tres            = 0
+	)
+
+	for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese el numero de patente: ")
+		fmt.Scan(&patente)
+		fmt.Println("Ingrese el estado del vehiculo (0 auto funcionando; 1 está en el taller mecánico; 2 está en chapa y pintura y 3 fuera de funcionamiento.)")
+		fmt.Scan(&estado)
+		vector[i] = patente
+		vector[i+1] = estado
+	}
+	for i := 0; i < indice; i++ {
+		switch {
+		case vector[i+1] == 0:
+			cero = cero + 1
+
+		case vector[i+1] == 1:
+			uno = uno + 1
+
+		case vector[i+1] == 2:
+			dos = dos + 1
+
+		case vector[i+1] == 3:
+			tres = tres + 1
+
+		}
+	}
+	for i := 0; i < indice; i++ {
+		if
+	}
 }
