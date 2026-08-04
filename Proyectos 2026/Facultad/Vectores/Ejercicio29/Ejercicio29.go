@@ -58,7 +58,7 @@ func main() {
 	fmt.Println("Cantidad de vehiculos en estado 2: ", dos)
 	fmt.Println("Cantidad de vehiculos en estado 3: ", tres)
 	fmt.Println("Cantidad de vehiculos en estado 0: ", cero)
-	for i := 0; i < indice; i++ {
+	for i := 0; i < tres; i++ {
 		fmt.Print(estadocero[i])
 		fmt.Print(" , ")
 	}
