@@ -21,6 +21,7 @@ func main() {
 	)
 	var (
 		vector          [14]int
+		estadocero      []int
 		patente, estado int
 		cero            = 0
 		uno             = 0
@@ -40,7 +41,7 @@ func main() {
 		switch {
 		case vector[i+1] == 0:
 			cero = cero + 1
-
+			estadocero[i] = vector[i]
 		case vector[i+1] == 1:
 			uno = uno + 1
 
@@ -52,7 +53,5 @@ func main() {
 
 		}
 	}
-	for i := 0; i < indice; i++ {
-		if
-	}
+
 }
