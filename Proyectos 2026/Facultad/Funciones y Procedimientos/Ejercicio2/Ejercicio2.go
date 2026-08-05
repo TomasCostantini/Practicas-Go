@@ -46,4 +46,4 @@ func verificarMultiplo(primer_numero, primer_numerop int) (resultado bool) {
 		resultado = false
 	}
 	return resultado
-}
+} 
