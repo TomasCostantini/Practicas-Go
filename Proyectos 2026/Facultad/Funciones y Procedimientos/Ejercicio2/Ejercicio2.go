@@ -11,5 +11,39 @@ El programa a desarrollar deberá implementar la función para resolver el probl
 */
 package main
 
+import "fmt"
+
 func main() {
+	var (
+		inicio_secuencia              int
+		final_secuencia               int = 5
+		primer_numero, primer_numerop int
+	)
+	for inicio_secuencia = 0; inicio_secuencia < final_secuencia; inicio_secuencia++ {
+		fmt.Println("Ingrese un numero: ")
+		fmt.Scan(&primer_numero)
+		primer_numerop = primer_numero
+
+		if verificarMultiplo(primer_numero, primer_numerop) == true {
+			fmt.Println("El numero cumple con la condicion")
+		} else {
+			fmt.Println("El numero no cumple con la condicion")
+		}
+
+	}
+}
+
+func verificarMultiplo(primer_numero, primer_numerop int) (resultado bool) {
+	for primer_numero >= 3 {
+		primer_numero -= 3
+	}
+	for primer_numerop >= 5 {
+		primer_numerop -= 5
+	}
+	if primer_numero == 0 && primer_numerop != 0 {
+		resultado = true
+	} else {
+		resultado = false
+	}
+	return resultado
 }
