@@ -10,9 +10,11 @@ número o no, la función deberá recibir como parámetro el número ingresado p
 usuario y el número generado aleatoriamente e informar por pantalla si el número
 generado es mayor o menor que el ingresado. Además deberá devolver un valor
 booleando que indique si acertó el número o no.
+
 ●Contar el número de intentos.
 ●En el momento de la victoria, mostrarlo en pantalla e informar el número de intentos que ha
 utilizado, sí el número de intentos es:
+
 o <= 5 se indica al jugador que es bueno.
 o 5 < número de intentos < 15 se indica al jugador que es regular.
 o el número de intentos es > 15 se indica que el jugador no es muy bueno.
@@ -21,14 +23,25 @@ package main
 
 import "fmt"
 import "time"
+import "math/rand"
 
 func main() {
-	var(
-		intentos=0
+	const (
+		maximo = 120
+	)
+	var (
+		intentos                 = 0
 		numero, numero_aleatorio int
 	)
 	rand.Seed(time.Now().Unix())
-	numero_aleatorio=rand
-	fmt.Println("")
+	numero_aleatorio = rand.Intn(maximo)
+
+	fmt.Println("Ingrese un numero: ")
+	fmt.Scan(&numero)
+
+
+}
+
+func verificacion(){
 
 }
