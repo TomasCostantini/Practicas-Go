@@ -38,7 +38,7 @@ var (
 	excursiones, comision int
 	promotoresA           = 0
 	promotoresB           = 0
-	PromotoresC           = 0
+	promotoresC           = 0
 	categoria             string
 )
 
@@ -50,6 +50,9 @@ func main() {
 		fmt.Println("El promotor es de categoria: ", categoriaPromotor(excursiones))
 		fmt.Println("La comision correspondiente es: ", importePagar(categoria, importeA, importeB, importeC))
 	}
+	fmt.Println("Cantidad de promotores con categoria A: ", promotoresA)
+	fmt.Println("Cantidad de promotores con categoria B: ", promotoresB)
+	fmt.Println("Cantidad de promotores con categoria C: ", promotoresC)
 }
 
 func categoriaPromotor(excursiones int) string {
@@ -62,7 +65,7 @@ func categoriaPromotor(excursiones int) string {
 		promotoresB++
 	case excursiones > 100:
 		categoria = "C"
-		PromotoresC++
+		promotoresC++
 	}
 	return categoria
 }
