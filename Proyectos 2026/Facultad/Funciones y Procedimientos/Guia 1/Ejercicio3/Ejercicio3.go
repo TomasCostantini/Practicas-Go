@@ -35,21 +35,34 @@ const (
 )
 
 var (
-	excursiones, promotoresA, promotoresB, PromotoresC int
-	categoria string
+	excursiones int
+	promotoresA = 0
+	promotoresB = 0
+	PromotoresC = 0
+	categoria   string
 )
 
 func main() {
 	for i := 0; i < promotores; i++ {
 		fmt.Println("Ingrese la cantidad de excursiones vendidas: ")
 		fmt.Scan(&excursiones)
-		categoriaPromotor(excursiones)
+		fmt.Println("El proimotor es de categoria: ", categoriaPromotor(excursiones))
 	}
 }
 
 func categoriaPromotor(excursiones int) string {
-	
-return categoria
+	switch {
+	case excursiones < 10:
+		categoria = "A"
+		promotoresA++
+	case excursiones > 10 && excursiones < 100:
+		categoria = "B"
+		promotoresB++
+	case excursiones > 100:
+		categoria = "C"
+		PromotoresC++
+	}
+	return categoria
 }
 
 func importePagar() {
