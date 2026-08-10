@@ -10,8 +10,60 @@ Cada operación deberá ser implementada con distintas funciones y deberá recib
 los números a operar y devolver el resultado de la operación.
 */
 package main
+
 import "fmt"
 
-func main(){
-	
+func main() {
+	var (
+		primer_numero, segundo_numero float32
+		operacion                     int
+	)
+
+	fmt.Println("Elija la operacion que desee realizar(1 sumar, 2 restar, 3 multiplicar, 4 dividir, 0 salir)")
+	fmt.Scan(&operacion)
+
+	for operacion != 0 {
+		fmt.Println("Ingrese el primer numero:")
+		fmt.Scan(&primer_numero)
+		fmt.Println("Ingrese el segundo numero:")
+		fmt.Scan(&segundo_numero)
+
+		switch operacion {
+		case 1:
+			fmt.Println("El resultado es:", suma(primer_numero, segundo_numero))
+		case 2:
+			fmt.Println("El resultado es:", resta(primer_numero, segundo_numero))
+		case 3:
+			fmt.Println("El resultado es:", multiplicacion(primer_numero, segundo_numero))
+		case 4:
+			fmt.Println("El resultado es:", division(primer_numero, segundo_numero))
+		default:
+			fmt.Println("Operacion no valida")
+		}
+		fmt.Println("Elija la operacion que desee realizar(1 sumar, 2 restar, 3 multiplicar, 4 dividir, 0 salir)")
+		fmt.Scan(&operacion)
+
+	}
+
+	fmt.Println("Programa finalizado")
+}
+
+func suma(primer_numero, segundo_numero float32) (resultado float32) {
+	resultado = primer_numero + segundo_numero
+	return resultado
+}
+
+func resta(primer_numero, segundo_numero float32) (resultado float32) {
+	resultado = primer_numero - segundo_numero
+	return resultado
+}
+
+func multiplicacion(primer_numero, segundo_numero float32) (resultado float32) {
+	resultado = primer_numero * segundo_numero
+	return resultado
+}
+
+func division(primer_numero, segundo_numero float32) (resultado float32) {
+	resultado = primer_numero / segundo_numero
+	return resultado
 }
