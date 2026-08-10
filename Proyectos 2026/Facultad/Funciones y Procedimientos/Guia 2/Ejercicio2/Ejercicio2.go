@@ -24,7 +24,11 @@ package main
 import "fmt"
 import "time"
 import "math/rand"
-var(validez bool)
+
+var (
+	validez bool
+)
+
 func main() {
 	const (
 		maximo = 120
@@ -43,13 +47,16 @@ func main() {
 	}
 }
 
-
-
-
-
-func verificacion(numero, aleatorio int) bool{
-if numero<aleatorio{
-
-}
-return validez
+func verificacion(numero, aleatorio int) bool {
+	switch {
+	case numero < aleatorio:
+		validez = false
+		fmt.Println("El numero es mayor")
+	case numero == aleatorio:
+		validez = true
+	case numero > aleatorio:
+		validez = false
+		fmt.Println("El numero es menor")
+	}
+	return validez
 }
