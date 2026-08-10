@@ -24,7 +24,7 @@ package main
 import "fmt"
 import "time"
 import "math/rand"
-
+var(validez bool)
 func main() {
 	const (
 		maximo = 120
@@ -36,15 +36,20 @@ func main() {
 	rand.Seed(time.Now().Unix())
 	numero_aleatorio = rand.Intn(maximo)
 
-	for numero != numero_aleatorio {
+	for validez != false {
 		fmt.Println("Ingrese un numero: ")
 		fmt.Scan(&numero)
 		verificacion(numero, numero_aleatorio)
 	}
 }
 
-func verificacion(numero, aleatorio int) {
+
+
+
+
+func verificacion(numero, aleatorio int) bool{
 if numero<aleatorio{
-	
+
 }
+return validez
 }
