@@ -43,6 +43,7 @@ var (
 )
 
 func main() {
+
 	for i := 0; i < promotores; i++ {
 		fmt.Println("Ingrese la cantidad de excursiones vendidas: ")
 		fmt.Scan(&excursiones)
@@ -69,11 +70,11 @@ func categoriaPromotor(excursiones int) string {
 func importePagar(categoria string, importeA, importeB, importeC int) int {
 	switch {
 	case categoria == "A":
-
+		comision = importeA * excursiones
 	case categoria == "B":
-
+		comision = importeB * excursiones
 	case categoria == "C":
-
+		comision = importeC * excursiones
 	}
 	return comision
 }
