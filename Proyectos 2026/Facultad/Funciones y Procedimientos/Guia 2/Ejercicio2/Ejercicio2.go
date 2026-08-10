@@ -58,5 +58,6 @@ func verificacion(numero, aleatorio int) bool {
 		validez = false
 		fmt.Println("El numero es menor")
 	}
+	intentos++
 	return validez
 }
