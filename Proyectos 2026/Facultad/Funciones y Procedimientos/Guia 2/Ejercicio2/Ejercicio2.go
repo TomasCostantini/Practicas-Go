@@ -23,6 +23,11 @@ import "fmt"
 import "time"
 
 func main() {
+	var(
+		intentos=0
+	)
+	rand.Seed(time.Now().Unix())
+	numero_aleatorio=rand
 	fmt.Println("")
 
 }
