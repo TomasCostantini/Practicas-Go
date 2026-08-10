@@ -25,6 +25,7 @@ import "time"
 func main() {
 	var(
 		intentos=0
+		numero, numero_aleatorio int
 	)
 	rand.Seed(time.Now().Unix())
 	numero_aleatorio=rand
