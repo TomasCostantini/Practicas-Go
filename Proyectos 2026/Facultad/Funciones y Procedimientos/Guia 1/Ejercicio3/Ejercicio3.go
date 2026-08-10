@@ -25,11 +25,30 @@ Imprimir los resultados.
 */
 package main
 
+import "fmt"
+
 const (
 	promotores = 10
+	importeA   = 1000
+	importeB   = 1500
+	importeC   = 1900
 )
 
-var ()
+var (
+	excursiones, promotoresA, promotoresB, PromotoresC int
+)
 
 func main() {
+	for i := 0; i < promotores; i++ {
+		fmt.Println("Ingrese la cantidad de excursiones vendidas: ")
+		fmt.Scan(&excursiones)
+	}
+}
+
+func categoriaPromotor() {
+
+}
+
+func importePagar() {
+
 }
