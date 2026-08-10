@@ -18,5 +18,11 @@ o 5 < número de intentos < 15 se indica al jugador que es regular.
 o el número de intentos es > 15 se indica que el jugador no es muy bueno.
 */
 package main
+
 import "fmt"
 import "time"
+
+func main() {
+	fmt.Println("")
+
+}

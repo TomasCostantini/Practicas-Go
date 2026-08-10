@@ -25,5 +25,11 @@ Imprimir los resultados.
 */
 package main
 
+const (
+	promotores = 10
+)
+
+var ()
+
 func main() {
 }
