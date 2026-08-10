@@ -26,7 +26,8 @@ import "time"
 import "math/rand"
 
 var (
-	validez bool
+	validez  bool
+	intentos = 0
 )
 
 func main() {
@@ -34,7 +35,6 @@ func main() {
 		maximo = 120
 	)
 	var (
-		intentos                 = 0
 		numero, numero_aleatorio int
 	)
 	rand.Seed(time.Now().Unix())
