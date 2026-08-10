@@ -36,12 +36,15 @@ func main() {
 	rand.Seed(time.Now().Unix())
 	numero_aleatorio = rand.Intn(maximo)
 
-	fmt.Println("Ingrese un numero: ")
-	fmt.Scan(&numero)
-
-
+	for numero != numero_aleatorio {
+		fmt.Println("Ingrese un numero: ")
+		fmt.Scan(&numero)
+		verificacion(numero, numero_aleatorio)
+	}
 }
 
-func verificacion(){
-
+func verificacion(numero, aleatorio int) {
+if numero<aleatorio{
+	
+}
 }
