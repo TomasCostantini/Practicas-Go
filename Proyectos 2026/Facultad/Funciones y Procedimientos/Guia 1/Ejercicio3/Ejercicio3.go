@@ -35,7 +35,7 @@ const (
 )
 
 var (
-	excursiones int
+	excursiones, comision int
 	promotoresA = 0
 	promotoresB = 0
 	PromotoresC = 0
@@ -46,7 +46,8 @@ func main() {
 	for i := 0; i < promotores; i++ {
 		fmt.Println("Ingrese la cantidad de excursiones vendidas: ")
 		fmt.Scan(&excursiones)
-		fmt.Println("El proimotor es de categoria: ", categoriaPromotor(excursiones))
+		fmt.Println("El promotor es de categoria: ", categoriaPromotor(excursiones))
+		fmt.Println("La comision correspondiente es: ",importePagar(categoria,importeA,importeB,importeC))
 	}
 }
 
@@ -65,6 +66,7 @@ func categoriaPromotor(excursiones int) string {
 	return categoria
 }
 
-func importePagar() {
+func importePagar(categoria,importeA,importeB,importeC int) int{
 
+	return comision
 }
