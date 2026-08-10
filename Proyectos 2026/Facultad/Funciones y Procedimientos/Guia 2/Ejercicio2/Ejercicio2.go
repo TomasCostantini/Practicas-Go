@@ -45,6 +45,7 @@ func main() {
 		fmt.Scan(&numero)
 		verificacion(numero, numero_aleatorio)
 	}
+	
 }
 
 func verificacion(numero, aleatorio int) bool {
