@@ -44,11 +44,10 @@ func main() {
 		fmt.Println("Ingrese un numero: ")
 		fmt.Scan(&numero)
 		verificacion(numero, numero_aleatorio)
-	}else{
-		fmt.Println("El numero es correcto")
+	}
 	}
 	fmt.Println("El numero de intentos fue: ", intentos)
-}
+
 
 func verificacion(numero, aleatorio int) bool {
 	switch {
