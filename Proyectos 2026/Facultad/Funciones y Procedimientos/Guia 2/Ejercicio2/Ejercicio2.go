@@ -45,9 +45,9 @@ func main() {
 		fmt.Scan(&numero)
 		verificacion(numero, numero_aleatorio)
 	}
-	}
+	
 	fmt.Println("El numero de intentos fue: ", intentos)
-
+}
 
 func verificacion(numero, aleatorio int) bool {
 	switch {
