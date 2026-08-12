@@ -40,6 +40,8 @@ func main() {
 	rand.Seed(time.Now().Unix())
 	numero_aleatorio = rand.Intn(maximo)
 
+
+	
 	for validez != false {
 		fmt.Println("Ingrese un numero: ")
 		fmt.Scan(&numero)
