@@ -35,8 +35,13 @@ func main() {
 		fmt.Scan(&numero)
 		vectorB[i] = numero
 	}
+	ordenamiento(&vectorA)
 }
 
-func ordenamiento() {
-
+func ordenamiento(vector*[indice]int) {
+for i:=0;i<indice-1;i++{
+	for z:=i+1;i<indice;i++{
+		if
+	}
+}
 }
