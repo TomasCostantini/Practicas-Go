@@ -9,12 +9,34 @@ que sea la intercalación ordenada de A y de B (considere que no hay elementos r
 */
 
 package main
+
 import "fmt"
 
-func main(){
+const (
+	indice  = 20
+	indiceC = 40
+)
 
+func main() {
+	var (
+		vectorA [indice]int
+		vectorB [indice]int
+		vectorC [indiceC]int
+		numero  int
+	)
+
+	for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese el valor ", i, " del vector A:")
+		fmt.Scan(&numero)
+		vectorA[i] = numero
+	}
+	for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese el valor ", i, " del vector B:")
+		fmt.Scan(&numero)
+		vectorB[i] = numero
+	}
 }
 
-func ordenamiento(){
+func ordenamiento() {
 
 }
