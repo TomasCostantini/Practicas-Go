@@ -38,12 +38,15 @@ func main() {
 	ordenamiento(&vectorA)
 }
 
-func ordenamiento(vector*[indice]int, aux int) {
-for i:=0;i<indice-1;i++{
-	for z:=i+1;i<indice;i++{
-		if vector[i]<vector[z]{
-			aux=
+func ordenamiento(vector *[indice]int) {
+	var aux int
+	for i := 0; i < indice-1; i++ {
+		for z := i + 1; i < indice; i++ {
+			if vector[i] < vector[z] {
+				aux = vector[i]
+				vector[i] = vector[z]
+				vector[z] = aux
+			}
 		}
 	}
-}
 }
