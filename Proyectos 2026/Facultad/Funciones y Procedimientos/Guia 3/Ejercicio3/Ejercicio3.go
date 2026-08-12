@@ -36,6 +36,19 @@ func main() {
 		vectorB[i] = numero
 	}
 	ordenamiento(&vectorA)
+	ordenamiento(&vectorB)
+	intercalar(&vectorC)
+	
+		for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese el valor ", i, " del vector A:")
+		fmt.Scan(&numero)
+		vectorA[i] = numero
+	}
+	for i := 0; i < indice; i++ {
+		fmt.Println("Ingrese el valor ", i, " del vector B:")
+		fmt.Scan(&numero)
+		vectorB[i] = numero
+	}
 }
 
 func ordenamiento(vector *[indice]int) {
@@ -49,4 +62,8 @@ func ordenamiento(vector *[indice]int) {
 			}
 		}
 	}
+}
+
+func intercalar(vector *[indiceC]int) {
+
 }
