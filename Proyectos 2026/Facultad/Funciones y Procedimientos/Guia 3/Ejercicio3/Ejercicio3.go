@@ -13,8 +13,8 @@ package main
 import "fmt"
 
 const (
-	indice  = 20
-	indiceC = 40
+	indice  = 4
+	indiceC = 8
 )
 
 func main() {
@@ -37,12 +37,11 @@ func main() {
 	}
 	ordenamiento(&vectorA)
 	ordenamiento(&vectorB)
-	intercalar(&vectorC)
-	
+	intercalar(&vectorA, &vectorB, &vectorC)
+	fmt.Println(vectorC)
 }
 
 func ordenamiento(vector *[indice]int) {
-	//var aux int
 	for i := 0; i < indice-1; i++ {
 		for z := i + 1; i < indice; i++ {
 			if vector[i] < vector[z] {
@@ -54,6 +53,11 @@ func ordenamiento(vector *[indice]int) {
 	}
 }
 
-func intercalar(vector *[indiceC]int) {
-
+func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
+	for i := 0; i < indiceC; i = i + 2 {
+		vectorc[i] = vectora[i]
+	}
+	for i := 1; i < indiceC; i = i + 2 {
+		vectorc[i] = vectorb[i]
+	}
 }
