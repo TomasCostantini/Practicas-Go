@@ -1,6 +1,6 @@
 /*
 Guia de ejercicios GO:
-Ejercicio 1:
+Ejercicio 10:
 Cargar una matriz A de 4x4:
 a) Crear una función que calcule y devuelva como resultado la suma de los elementos de la diagonal
 principal

@@ -1,6 +1,6 @@
 /*
 Guia de ejercicios GO:
-Ejercicio 1:
+Ejercicio 12:
 Se tiene las calificaciones de 6 asignaturas (enumeradas del 1 al 6) correspondientes a 20 alumnos
 (enumerados del 1 al 20):
 a) Cargar una matriz AL con los datos de las calificaciones (cada fila representa un alumno y cada columna
