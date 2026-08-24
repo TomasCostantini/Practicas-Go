@@ -1,7 +1,8 @@
 /*
 Guia de ejercicios GO:
-Ejercicio 1:
-Cargar una matriz A de 4x4. Crear una función que reciba como parámetro la matriz cargada y devuelva como
-resultado la suma de sus elementos. Imprimir la suma.
+Ejercicio 2:
+Cargar una matriz A de 6x5, Crear una función que reciba como parámetro la matriz cargada y devuelva la suma
+de aquellos elementos que sean mayor o igual que 5 y la cantidad de elementos que intervinieron. Imprimir los
+resultados.
 */
 package main
