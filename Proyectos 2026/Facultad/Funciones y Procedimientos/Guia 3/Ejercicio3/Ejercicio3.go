@@ -21,8 +21,8 @@ func main() {
 	var (
 		vectorA [indice]int
 		vectorB [indice]int
-		//vectorC [indiceC]int
-		numero int
+		vectorC [indiceC]int
+		numero  int
 	)
 
 	for i := 0; i < indice; i++ {
@@ -37,9 +37,10 @@ func main() {
 	}
 	ordenamiento(&vectorA)
 	ordenamiento(&vectorB)
-	//intercalar(&vectorA, &vectorB, &vectorC)
+	intercalar(&vectorA, &vectorB, &vectorC)
 	fmt.Println(vectorA)
 	fmt.Println(vectorB)
+	fmt.Println(vectorC)
 }
 
 func ordenamiento(vector *[indice]int) {
@@ -54,29 +55,12 @@ func ordenamiento(vector *[indice]int) {
 	}
 }
 
-/*func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
+func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
 	var a int
 	for i := 0; i < indiceC; i++ {
 		vectorc[a] = vectora[i]
 	}
-	for i := 1; i < indiceC;  i++ {
+	for i := 1; i < indiceC; i++ {
 		vectorc[i] = vectorb[i]
 	}
-}*/
-for e < elementosc { // j es indice de a y x es índice de b, e es índice de c
-
-        if j < elementosayb {
-            if x == elementosayb || a[j] < b[x] {
-                c[e] = a[j]
-                j++
-                e++
-            }
-        }
-        if x < elementosayb {
-            if j == elementosayb || a[j] > b[x] {
-                c[e] = b[x]
-                x++
-                e++
-            }
-
-        }
+}
