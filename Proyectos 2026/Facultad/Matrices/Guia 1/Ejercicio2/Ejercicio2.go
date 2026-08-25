@@ -14,21 +14,27 @@ const (
 	columnas = 5
 )
 
-func main(){
-	var(
-		A[filas][columnas] int
+func main() {
+	var (
+		A      [filas][columnas]int
 		numero int
 	)
-	for i:=0;i<filas;i++{
-		for z:=0;i<columnas;z++{
+	for i := 0; i < filas; i++ {
+		for z := 0; i < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
 			fmt.Scan(&numero)
-			A[i][z]=numero
+			A[i][z] = numero
 		}
 	}
-
+	suma(A)
 }
 
-func suma(){
-	
+func suma(A [filas][columnas]int) {
+	for i := 0; i < filas; i++ {
+		for z := 0; i < columnas; z++ {
+			if A[i][z] <= 5 {
+
+			}
+		}
+	}
 }
