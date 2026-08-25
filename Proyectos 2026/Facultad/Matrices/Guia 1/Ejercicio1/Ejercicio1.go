@@ -30,6 +30,7 @@ func main() {
 }
 
 func sumar(A [filas][columnas]int) int {
+	var suma int
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			suma = suma + A[i][z]
