@@ -28,4 +28,16 @@ func main() {
 	}
 	fmt.Println("Ingrese un numero de referencia: ")
 	fmt.Scan(&numero_referencia)
+	fmt.Println("La cantidad de veces que se repite el numero es: ", conteo(&numero_referencia, &A))
+}
+func conteo(numero_referencia *int, A *[filas][columnas]int) int {
+	var repeticiones = 0
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			if A[i][z] == *numero_referencia {
+				repeticiones++
+			}
+		}
+	}
+	return repeticiones
 }
