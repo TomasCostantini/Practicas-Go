@@ -26,10 +26,24 @@ package main
 
 import "fmt"
 
+const (
+	precio_cuadra = 500
+	indice_REM    = 6
+)
+
 func main() {
 	var (
-		movil int
+		movil, cuadras int
+		REM            [indice_REM]int
 	)
 	fmt.Println("Ingrese el numero del movil: ")
 	fmt.Scan(&movil)
+	for movil != 0 {
+		fmt.Println("Ingrese el numero de cuadras que recorrio el movil: ")
+		fmt.Scan(&cuadras)
+		REM[movil] = cuadras
+		fmt.Println("Ingrese el numero del movil: ")
+		fmt.Scan(&movil)
+	}
+
 }
