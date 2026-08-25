@@ -46,20 +46,16 @@ func main() {
 		fmt.Scan(&movil)
 	}
 
-	fmt.Println("Ingrese un numero de movil: ")
-	fmt.Scan(&movil)
-	for movil != 0 {
-		fmt.Println(calculo(movil, REM))
-		fmt.Println("Ingrese el numero del movil: ")
-		fmt.Scan(&movil)
-	}
+	calculo(movil, REM)
 
 }
 
-func calculo(movil int, vector [indice_REM]int)int {
+func calculo(movil int, vector [indice_REM]int) {
 	var valor int
-	valor = precio_cuadra * vector[movil]
-return valor
+	for i := 0; i < indice_REM; i++ {
+		valor = precio_cuadra * vector[movil]
+		fmt.Printf("Movil: %d, Cuadras: %d, Valor: %d\n", movil, vector[i], valor)
+	}
 }
 
 func ordenamiento() {}
