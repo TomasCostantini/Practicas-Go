@@ -9,8 +9,8 @@ package main
 import "fmt"
 
 const (
-	filas    = 10
-	columnas = 10
+	filas    = 2
+	columnas = 2
 )
 
 func main() {
@@ -31,6 +31,21 @@ func main() {
 	fmt.Println("La suma total de numeros pares es: ", suma_pares)
 }
 
-func calculo(A[filas][columnas])(int, int){
-	
+func calculo(A [filas][columnas]int) (int, int) {
+	var (
+		suma_pares   = 0
+		suma_impares = 0
+	)
+
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			if A[i][z]%2 == 0 {
+				suma_pares = suma_pares + A[i][z]
+			} else {
+				suma_impares = suma_impares + A[i][z]
+			}
+		}
+	}
+
+	return suma_pares, suma_impares
 }
