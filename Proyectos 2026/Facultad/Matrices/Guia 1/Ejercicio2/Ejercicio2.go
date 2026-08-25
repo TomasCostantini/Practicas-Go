@@ -6,3 +6,20 @@ de aquellos elementos que sean mayor o igual que 5 y la cantidad de elementos qu
 resultados.
 */
 package main
+
+import "fmt"
+
+const (
+	filas    = 6
+	columnas = 5
+)
+
+func main(){
+	var(
+		A[filas][columnas] int
+		numero int
+	)
+	for i:=0;i<filas;i++{
+		for z:=
+	}
+}
