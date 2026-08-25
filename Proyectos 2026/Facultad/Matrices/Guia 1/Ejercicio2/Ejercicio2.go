@@ -29,12 +29,18 @@ func main() {
 	suma(A)
 }
 
-func suma(A [filas][columnas]int) {
+func suma(A [filas][columnas]int) (int, int) {
+	var (
+		suma      = 0
+		elementos = 0
+	)
 	for i := 0; i < filas; i++ {
 		for z := 0; i < columnas; z++ {
-			if A[i][z] <= 5 {
-
+			if A[i][z] >= 5 {
+				suma = suma + A[i][z]
+				elementos = elementos + 1
 			}
 		}
 	}
+	return suma, elementos
 }
