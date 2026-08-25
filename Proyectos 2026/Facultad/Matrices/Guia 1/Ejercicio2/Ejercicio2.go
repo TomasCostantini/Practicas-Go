@@ -20,13 +20,15 @@ func main() {
 		numero int
 	)
 	for i := 0; i < filas; i++ {
-		for z := 0; i < columnas; z++ {
+		for z := 0; z < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
 			fmt.Scan(&numero)
 			A[i][z] = numero
 		}
 	}
-	suma(A)
+	suma, elementos := suma(A)
+	fmt.Println("El valor de la suma es: ", suma)
+	fmt.Println("El numero de elementos sumados es: ", elementos)
 }
 
 func suma(A [filas][columnas]int) (int, int) {
@@ -35,7 +37,7 @@ func suma(A [filas][columnas]int) (int, int) {
 		elementos = 0
 	)
 	for i := 0; i < filas; i++ {
-		for z := 0; i < columnas; z++ {
+		for z := 0; z < columnas; z++ {
 			if A[i][z] >= 5 {
 				suma = suma + A[i][z]
 				elementos = elementos + 1
