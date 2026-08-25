@@ -18,7 +18,7 @@ func main() {
 		A      [filas][columnas]int
 		numero int
 	)
-	
+
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
@@ -26,4 +26,11 @@ func main() {
 			A[i][z] = numero
 		}
 	}
+	suma_pares, suma_impares := calculo(A)
+	fmt.Println("La suma total de numeros impares es: ", suma_impares)
+	fmt.Println("La suma total de numeros pares es: ", suma_pares)
+}
+
+func calculo(A[filas][columnas])(int, int){
+	
 }
