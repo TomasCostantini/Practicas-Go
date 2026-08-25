@@ -26,12 +26,12 @@ func main() {
 	)
 
 	for i := 0; i < indice; i++ {
-		fmt.Println("Ingrese el valor ", i, " del vector A:")
+		fmt.Println("Ingrese el valor ", i+1, " del vector A:")
 		fmt.Scan(&numero)
 		vectorA[i] = numero
 	}
 	for i := 0; i < indice; i++ {
-		fmt.Println("Ingrese el valor ", i, " del vector B:")
+		fmt.Println("Ingrese el valor ", i+1, " del vector B:")
 		fmt.Scan(&numero)
 		vectorB[i] = numero
 	}
