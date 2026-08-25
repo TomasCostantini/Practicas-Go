@@ -38,9 +38,18 @@ func main() {
 	ordenamiento(&vectorA)
 	ordenamiento(&vectorB)
 	intercalar(&vectorA, &vectorB, &vectorC)
-	fmt.Println(vectorA)
-	fmt.Println(vectorB)
-	fmt.Println(vectorC)
+
+	for i := 0; i < indice; i++ {
+		fmt.Print(vectorA[i])
+	}
+	fmt.Println()
+	for i := 0; i < indice; i++ {
+		fmt.Print(vectorB[i])
+	}
+	fmt.Println()
+	for i := 0; i < indiceC; i++ {
+		fmt.Print(vectorC[i])
+	}
 }
 
 func ordenamiento(vector *[indice]int) {
@@ -57,14 +66,15 @@ func ordenamiento(vector *[indice]int) {
 
 func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
 
-    for i := 0; i < indiceC; i += 2 {
-        vectorc[i] = vectora[i/2]
-    }
+	for i := 0; i < indiceC; i += 2 {
+		vectorc[i] = vectora[i/2]
+	}
 
-    for i := 1; i < indiceC; i += 2 {
-        vectorc[i] = vectorb[i/2]
-    }
+	for i := 1; i < indiceC; i += 2 {
+		vectorc[i] = vectorb[i/2]
+	}
 }
+
 // Intercala los elementos de vectorA y vectorB dentro de vectorC.
 // El primer for coloca los valores de A en las posiciones pares de C,
 // y el segundo coloca los valores de B en las posiciones impares.
