@@ -40,15 +40,15 @@ func main() {
 	intercalar(&vectorA, &vectorB, &vectorC)
 
 	for i := 0; i < indice; i++ {
-		fmt.Print(vectorA[i])
+		fmt.Print(vectorA[i], ";")
 	}
 	fmt.Println()
 	for i := 0; i < indice; i++ {
-		fmt.Print(vectorB[i])
+		fmt.Print(vectorB[i], ";")
 	}
 	fmt.Println()
 	for i := 0; i < indiceC; i++ {
-		fmt.Print(vectorC[i])
+		fmt.Print(vectorC[i], ";")
 	}
 }
 
