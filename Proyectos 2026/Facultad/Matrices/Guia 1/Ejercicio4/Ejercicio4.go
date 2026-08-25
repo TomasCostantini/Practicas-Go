@@ -6,3 +6,24 @@ en la matriz A, para ello crear una función que reciba como parámetro la matri
 desea contar. Imprimir el resultado.
 */
 package main
+
+import "fmt"
+
+const (
+	filas    = 5
+	columnas = 5
+)
+
+func main() {
+	var (
+		numero int
+		A      [filas][columnas]int
+	)
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+			A[i][z] = numero
+		}
+	}
+}
