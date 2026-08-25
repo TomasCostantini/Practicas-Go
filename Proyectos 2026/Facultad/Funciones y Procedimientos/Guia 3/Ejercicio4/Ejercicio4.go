@@ -41,16 +41,17 @@ func main() {
 	for movil != 0 {
 		fmt.Println("Ingrese el numero de cuadras que recorrio el movil: ")
 		fmt.Scan(&cuadras)
-		REM[movil] = cuadras
-		fmt.Println("")
-		calculo( movil ,REM)
+		REM[movil-1] = cuadras
 		fmt.Println("Ingrese el numero del movil: ")
 		fmt.Scan(&movil)
 	}
-
+	
+		calculo(movil,REM)
 }
 
-func calculo(movil int, vector[] int ){}
+func calculo(movil int, vector[indice_REM] int ){
+
+}
 
 
 
