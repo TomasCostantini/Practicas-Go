@@ -65,15 +65,8 @@ func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]in
         vectorc[i] = vectorb[i/2]
     }
 }
-
-
-/*
-func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
-	//var a int
-	for i := 0; i < indiceC; i += 2 {
-		vectorc[i] = vectora[i-1]
-	}
-	for i := 1; i < indiceC; i += 2 {
-		vectorc[i] = vectorb[i-1]
-	}
-}*/
+// Intercala los elementos de vectorA y vectorB dentro de vectorC.
+// El primer for coloca los valores de A en las posiciones pares de C,
+// y el segundo coloca los valores de B en las posiciones impares.
+// Se utiliza i/2 para obtener la posición correspondiente de A o B,
+// ya que i avanza de dos en dos mientras los otros vectores avanzan de uno en uno.
