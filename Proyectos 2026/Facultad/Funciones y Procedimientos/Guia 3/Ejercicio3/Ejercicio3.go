@@ -56,11 +56,24 @@ func ordenamiento(vector *[indice]int) {
 }
 
 func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
+
+    for i := 0; i < indiceC; i += 2 {
+        vectorc[i] = vectora[i/2]
+    }
+
+    for i := 1; i < indiceC; i += 2 {
+        vectorc[i] = vectorb[i/2]
+    }
+}
+
+
+/*
+func intercalar(vectora *[indice]int, vectorb *[indice]int, vectorc *[indiceC]int) {
 	//var a int
 	for i := 0; i < indiceC; i += 2 {
-		vectorc[i] = vectora[i]
+		vectorc[i] = vectora[i-1]
 	}
 	for i := 1; i < indiceC; i += 2 {
-		vectorc[i] = vectorb[i]
+		vectorc[i] = vectorb[i-1]
 	}
-}
+}*/
