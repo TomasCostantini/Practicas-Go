@@ -42,8 +42,17 @@ func main() {
 		fmt.Println("Ingrese el numero de cuadras que recorrio el movil: ")
 		fmt.Scan(&cuadras)
 		REM[movil] = cuadras
+		fmt.Println("")
+		calculo( movil ,REM)
 		fmt.Println("Ingrese el numero del movil: ")
 		fmt.Scan(&movil)
 	}
 
 }
+
+func calculo(movil int, vector[] int ){}
+
+
+
+
+func ordenamiento(){}
