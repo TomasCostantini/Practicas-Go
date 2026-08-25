@@ -20,6 +20,15 @@ func main(){
 		numero int
 	)
 	for i:=0;i<filas;i++{
-		for z:=
+		for z:=0;i<columnas;z++{
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+			A[i][z]=numero
+		}
 	}
+
+}
+
+func suma(){
+	
 }
