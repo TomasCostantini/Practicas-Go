@@ -16,8 +16,8 @@ const (
 
 func main() {
 	var (
-		numero int
-		A      [filas][columnas]int
+		numero, numero_referencia int
+		A                         [filas][columnas]int
 	)
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
@@ -26,4 +26,6 @@ func main() {
 			A[i][z] = numero
 		}
 	}
+	fmt.Println("Ingrese un numero de referencia: ")
+	fmt.Scan(&numero_referencia)
 }
