@@ -8,6 +8,22 @@ package main
 
 import "fmt"
 
-func main() {
+const (
+	filas    = 4
+	columnas = 4
+)
 
+func main() {
+	var (
+		numero int
+		A      [filas][columnas]int
+	)
+
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+			A[i][z]=numero
+		}
+	}
 }
