@@ -5,3 +5,9 @@ Cargar una matriz A de 4x4. Crear una función que reciba como parámetro la mat
 resultado la suma de sus elementos. Imprimir la suma.
 */
 package main
+
+import "fmt"
+
+func main() {
+
+}
