@@ -25,7 +25,7 @@ func main() {
 			A[i][z] = numero
 		}
 	}
-	
+
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			if i == 0 {
@@ -33,11 +33,13 @@ func main() {
 				posicionfila = i
 				posicioncolumna = z
 			} else {
-					menor = A[i][z]
-					posicionfila = i
-					posicioncolumna = z
-				}
+				menor = A[i][z]
+				posicionfila = i
+				posicioncolumna = z
 			}
 		}
 	}
-
+	fmt.Println("El menor valor de la matriz es: ", menor)
+	fmt.Println("La fila en la que se encuentra es: ", posicionfila)
+	fmt.Println("La columna en la que se encuentra es: ", posicioncolumna)
+}

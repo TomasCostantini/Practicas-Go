@@ -8,8 +8,8 @@ package main
 import "fmt"
 
 const (
-	filas    = 6
-	columnas = 6
+	filas    = 4
+	columnas = 4
 )
 
 func main() {
