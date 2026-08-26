@@ -34,5 +34,5 @@ func main() {
 		}
 	}
 	fmt.Println("La cantidad de numeros iguales a las filas o columnas es: ", contador)
-
+	fmt.Println("Progrma finalizado")
 }

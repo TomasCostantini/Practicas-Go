@@ -32,5 +32,5 @@ func main() {
 		}
 		fmt.Println("")
 	}
-
+	fmt.Println("Progrma finalizado")
 }
