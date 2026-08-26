@@ -25,4 +25,11 @@ func main(){
 			A[i][z]=numero
 		}
 	}
+		for i:=0;i<filas;i++{
+		for z:=0;z<columnas;z++{
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+			A[i][z]=numero
+		}
+	}
 }
