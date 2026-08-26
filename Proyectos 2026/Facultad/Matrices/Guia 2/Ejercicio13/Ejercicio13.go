@@ -27,6 +27,7 @@ func main() {
 		for z := 0; z < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
 			fmt.Scan(&numero)
+			A[i][z]
 		}
 	}
 
