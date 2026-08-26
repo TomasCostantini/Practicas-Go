@@ -22,13 +22,18 @@ func main() {
 	var (
 		A      [filas][columnas]int
 		numero int
+		tipo   bool
 	)
+
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
 			fmt.Scan(&numero)
-			A[i][z]
+			A[i][z] = numero
 		}
 	}
+	fmt.Println("Ingrese el tipo de valor que desea buscar (0: mayor, 1:menor) ")
+	fmt.Scan(&tipo)
+	fmt.Println("Ingrese el tipo de valor que desea buscar (0: mayor, 1:menor) ")
 
 }
