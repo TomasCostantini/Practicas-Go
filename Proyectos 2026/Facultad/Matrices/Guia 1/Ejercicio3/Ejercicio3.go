@@ -29,6 +29,7 @@ func main() {
 	suma_pares, suma_impares := calculo(A)
 	fmt.Println("La suma total de numeros impares es: ", suma_impares)
 	fmt.Println("La suma total de numeros pares es: ", suma_pares)
+	fmt.Println("Progrma finalizado")
 }
 
 func calculo(A [filas][columnas]int) (int, int) {

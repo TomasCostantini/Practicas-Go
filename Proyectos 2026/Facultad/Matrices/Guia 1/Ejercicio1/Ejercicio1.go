@@ -27,6 +27,7 @@ func main() {
 		}
 	}
 	fmt.Println("El valor de la suma de sus elementos es: ", sumar(A))
+	fmt.Println("Progrma finalizado")
 }
 
 func sumar(A [filas][columnas]int) int {

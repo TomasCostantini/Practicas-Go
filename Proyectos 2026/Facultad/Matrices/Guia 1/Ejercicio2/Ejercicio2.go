@@ -29,6 +29,7 @@ func main() {
 	suma, elementos := suma(A)
 	fmt.Println("El valor de la suma es: ", suma)
 	fmt.Println("El numero de elementos sumados es: ", elementos)
+	fmt.Println("Progrma finalizado")
 }
 
 func suma(A [filas][columnas]int) (int, int) {
