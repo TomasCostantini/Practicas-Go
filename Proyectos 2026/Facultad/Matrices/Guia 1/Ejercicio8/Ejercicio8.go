@@ -8,28 +8,33 @@ package main
 import "fmt"
 
 const (
-	filas   = 3
-	columnas = 5
+	filas    = 2
+	columnas = 2
 )
 
-
-func main(){
-	var(
-		A[filas][columnas] int
+func main() {
+	var (
+		A             [filas][columnas]int
 		mayor, numero int
 	)
-	for i:=0;i<filas;i++{
-		for z:=0;z<columnas;z++{
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
 			fmt.Println("Ingrese un numero: ")
 			fmt.Scan(&numero)
-			A[i][z]=numero
+			A[i][z] = numero
 		}
 	}
-		for i:=0;i<filas;i++{
-		for z:=0;z<columnas;z++{
-			fmt.Println("Ingrese un numero: ")
-			fmt.Scan(&numero)
-			A[i][z]=numero
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			if i == 0 {
+				mayor = A[i][z]
+			} else {
+				if A[i][z] > mayor {
+					mayor = A[i][z]
+				}
+			}
 		}
 	}
+	fmt.Println("El mayor elemento de la matriz es: ", mayor)
+	fmt.Println("Progrma finalizado")
 }
