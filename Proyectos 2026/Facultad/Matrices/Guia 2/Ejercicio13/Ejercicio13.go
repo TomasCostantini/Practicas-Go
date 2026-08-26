@@ -10,3 +10,24 @@ c) Si se desea buscar sobre filas pares o impares (parámetro booleano)
 Imprimir los resultados.
 */
 package main
+
+import "fmt"
+
+const (
+	filas    = 10
+	columnas = 20
+)
+
+func main() {
+	var (
+		A      [filas][columnas]int
+		numero int
+	)
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+		}
+	}
+
+}
