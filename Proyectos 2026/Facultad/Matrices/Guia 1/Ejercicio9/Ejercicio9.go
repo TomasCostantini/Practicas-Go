@@ -42,4 +42,5 @@ func main() {
 	fmt.Println("El menor valor de la matriz es: ", menor)
 	fmt.Println("La fila en la que se encuentra es: ", posicionfila)
 	fmt.Println("La columna en la que se encuentra es: ", posicioncolumna)
+	fmt.Println("Programa finalizado.")
 }
