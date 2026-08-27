@@ -20,9 +20,9 @@ const (
 
 func main() {
 	var (
-		A      [filas][columnas]int
-		numero int
-		tipo   bool
+		A             [filas][columnas]int
+		numero        int
+		tipo, paridad bool
 	)
 
 	for i := 0; i < filas; i++ {
@@ -32,8 +32,15 @@ func main() {
 			A[i][z] = numero
 		}
 	}
+
 	fmt.Println("Ingrese el tipo de valor que desea buscar (0: mayor, 1:menor) ")
 	fmt.Scan(&tipo)
-	fmt.Println("Ingrese el tipo de valor que desea buscar (0: mayor, 1:menor) ")
+	fmt.Println("Ingrese el tipo de fila en la que lo desea buscar (0: par, 1:impar): ")
+	fmt.Scan(&paridad)
+	busqueda(&A, &tipo, &paridad)
+	fmt.Println("")
+}
+
+func busqueda(A *[filas][columnas]int, tipo *bool, paridad *bool) {
 
 }
