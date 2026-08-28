@@ -17,16 +17,27 @@ const (
 	columnas = 4
 )
 
-
-func main(){
-	var(
-		A[filas][columnas] int
-		numero int
+func main() {
+	var (
+		A                                      [filas][columnas]int
+		numero, suma_diagonal, suma_triangular int
 	)
 
-	for i:=0;i<filas;i++{
-		for z:=0;z<columnas;i++{
-			
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; i++ {
+			fmt.Println("Ingrese un numero: ")
+			fmt.Scan(&numero)
+			A[i][z] = numero
 		}
 	}
+	fmt.Println("La suma de los elemento de la diagonal principal es: ", suma_diagonal)
+	fmt.Println("La suma de los elementos de la triangular superior es: ", suma_triangular)
+}
+
+func diagonal() {
+
+}
+
+func triangular() {
+
 }
