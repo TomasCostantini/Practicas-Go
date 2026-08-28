@@ -9,3 +9,24 @@ superior.
 c) Imprimir los resultados.
 */
 package main
+
+import "fmt"
+
+const (
+	filas    = 4
+	columnas = 4
+)
+
+
+func main(){
+	var(
+		A[filas][columnas] int
+		numero int
+	)
+
+	for i:=0;i<filas;i++{
+		for z:=0;z<columnas;i++{
+			
+		}
+	}
+}
