@@ -30,6 +30,7 @@ func main() {
 			A[i][z] = numero
 		}
 	}
+	
 	fmt.Println("La suma de los elemento de la diagonal principal es: ", suma_diagonal)
 	fmt.Println("La suma de los elementos de la triangular superior es: ", suma_triangular)
 }
