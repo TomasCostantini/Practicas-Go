@@ -14,8 +14,8 @@ const (
 
 func main() {
 	var (
-		A      [filas][columnas]int
-		numero, mayor, aux int
+		A                  [filas][columnas]int
+		numero, aux int
 	)
 
 	for i := 0; i < filas; i++ {
@@ -26,7 +26,14 @@ func main() {
 		}
 	}
 
-	for i:=0;i<filas;i++{
+	for i := 0; i < filas; i++ {
+		for z := 0; z < columnas; z++ {
+			if A[i][z]<A[i][z+1]{
+				aux=A[i][z]
+				A[i][z]=A[i][z+1]
+				A[i][z+1]=aux
+			}
+		}
 
 	}
 }
