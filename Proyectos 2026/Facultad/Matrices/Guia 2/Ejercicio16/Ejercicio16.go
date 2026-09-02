@@ -25,7 +25,8 @@ func main() {
 			A[i][z] = numero
 		}
 	}
-	fmt.Println("\nMatriz original:")
+
+	fmt.Println("Matriz Original:")
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			fmt.Printf("%d\t", A[i][z])
@@ -41,7 +42,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("\nMatriz con las filas intercambiadas:")
+	fmt.Println("Matriz intercambiada:")
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
 			fmt.Printf("%d\t", A[i][z])
