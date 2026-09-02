@@ -15,7 +15,7 @@ const (
 func main() {
 	var (
 		A      [filas][columnas]int
-		numero int
+		numero, mayor, aux int
 	)
 
 	for i := 0; i < filas; i++ {
@@ -24,5 +24,9 @@ func main() {
 			fmt.Scan(&numero)
 			A[i][z] = numero
 		}
+	}
+
+	for i:=0;i<filas;i++{
+
 	}
 }
