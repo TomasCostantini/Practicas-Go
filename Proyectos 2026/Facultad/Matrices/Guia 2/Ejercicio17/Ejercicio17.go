@@ -14,7 +14,7 @@ const (
 
 func main() {
 	var (
-		A                  [filas][columnas]int
+		A           [filas][columnas]int
 		numero, aux int
 	)
 
@@ -28,12 +28,17 @@ func main() {
 
 	for i := 0; i < filas; i++ {
 		for z := 0; z < columnas; z++ {
-			if A[i][z]<A[i][z+1]{
-				aux=A[i][z]
-				A[i][z]=A[i][z+1]
-				A[i][z+1]=aux
+			if A[i][z] < A[i][z+1] {
+				aux = A[i][z]
+				A[i][z] = A[i][z+1]
+				A[i][z+1] = aux
 			}
 		}
-
+		for i := 0; i < filas; i++ {
+			for z := 0; z < columnas; z++ {
+				fmt.Printf("%d\t", A[i][z])
+			}
+			fmt.Println()
+		}
 	}
 }
