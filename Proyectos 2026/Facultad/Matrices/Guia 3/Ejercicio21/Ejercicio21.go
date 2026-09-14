@@ -20,20 +20,21 @@ const N = 4
 
 func main() {
 	var A [N][4]int
+cargarMatriz(&A)
 
-	var codigoAutor int
-	fmt.Print("Ingrese el codigo de autor a buscar: ")
-	fmt.Scan(&codigoAutor)
 
 }
 func cargarMatriz(matriz *[N][4]int) {
-	var codigo, 
+	var codigo_libro, codigo_autor, ejemplares, precio int 
 	for i := 0; i < N; i++ {
 		fmt.Println("Ingrese el codigo del libro: ")
-		matriz[i][0] = fmt.Scan(&codigo)
-		matriz[i][1] = 
-		matriz[i][2] = 
-		matriz[i][3] =  
+		matriz[i][0] = fmt.Scan(&codigo_libro)
+		fmt.Println("Ingrese el codigo del autor: ")
+		matriz[i][1] = fmt.Scan(&codigo_autor)
+		fmt.Println("Ingrese el numero de ejemplares: ")
+		matriz[i][2] = fmt.Scan(&ejemplares)
+		fmt.Println("Ingrese el precio de cada ejemplar: ")
+		matriz[i][3] = fmt.Scan(&precio)
 	}
 }
 
