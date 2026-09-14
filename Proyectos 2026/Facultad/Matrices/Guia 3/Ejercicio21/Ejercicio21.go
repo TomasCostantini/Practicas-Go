@@ -40,17 +40,9 @@ func cargarMatriz(matriz *[N][4]int) {
 
 func imprimirMatriz(matriz [N][4]int) {
 	for i := 0; i < N; i++ {
-		for j := 0; j < 4; j++ {
-			fmt.Print(matriz[i][j], " ")
+		for z := 0; z < 4; z++ {
+			fmt.Print(matriz[i][z], " ")
 		}
 		fmt.Println()
 	}
 } 
-func buscarLibrosPorAutor(codigoAutor int, matriz [N][4]int) {
-	fmt.Printf("Libros del autor %d:\n", codigoAutor)
-	for i := 0; i < N; i++ {
-		if matriz[i][1] == codigoAutor {
-			fmt.Printf("Codigo de libro: %d\n", matriz[i][0])
-		}
-	}
-}
