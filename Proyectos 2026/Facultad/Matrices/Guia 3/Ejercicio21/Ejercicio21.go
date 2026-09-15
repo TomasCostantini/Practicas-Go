@@ -20,22 +20,37 @@ const N = 4
 
 func main() {
 	var A [N][4]int
-cargarMatriz(&A)
-
+	cargarMatriz(&A)
 
 }
 func cargarMatriz(matriz *[N][4]int) {
-	var codigo_libro, codigo_autor, ejemplares, precio int 
+	var codigo_libro, codigo_autor, ejemplares, precio int
 	for i := 0; i < N; i++ {
 		fmt.Println("Ingrese el codigo del libro: ")
-		matriz[i][0] = fmt.Scan(&codigo_libro)
+		fmt.Scan(&codigo_libro)
 		fmt.Println("Ingrese el codigo del autor: ")
-		matriz[i][1] = fmt.Scan(&codigo_autor)
+		fmt.Scan(&codigo_autor)
 		fmt.Println("Ingrese el numero de ejemplares: ")
-		matriz[i][2] = fmt.Scan(&ejemplares)
+		fmt.Scan(&ejemplares)
 		fmt.Println("Ingrese el precio de cada ejemplar: ")
-		matriz[i][3] = fmt.Scan(&precio)
+		fmt.Scan(&precio)
+		matriz[i][0] = codigo_libro
+		matriz[i][1] = codigo_autor
+		matriz[i][2] = ejemplares
+		matriz[i][3] = precio
 	}
+}
+
+func libro_caro() {
+
+}
+
+func cantidad_ejemplares() {
+
+}
+
+func ordenar_matriz() {
+
 }
 
 func imprimirMatriz(matriz [N][4]int) {
@@ -45,4 +60,4 @@ func imprimirMatriz(matriz [N][4]int) {
 		}
 		fmt.Println()
 	}
-} 
+}
