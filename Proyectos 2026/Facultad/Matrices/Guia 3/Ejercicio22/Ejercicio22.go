@@ -78,18 +78,14 @@ func main() {
 			}
 		}
 	}
-
 	fmt.Println("\n--- VENDEDORES ORDENADOS POR VENTAS ---")
-
 	for i := 0; i < 50; i++ {
 		fmt.Printf("Vendedor %.0f - Total: $%.2f\n",
 			A[i][0], A[i][5])
 	}
 	fmt.Print("\nIngrese número de vendedor a buscar: ")
 	fmt.Scan(&vendedorBuscado)
-
 	fila := -1
-
 	for i := 0; i < 50; i++ {
 		if int(A[i][0]) == vendedorBuscado {
 			fila = i
