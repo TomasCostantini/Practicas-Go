@@ -25,11 +25,21 @@ import "fmt"
 const (
 	empleados = 67
 	filas     = 68
-	columnas  = 3
+	columnas  = 4
 )
 
 func main() {
 	var (
-		sueldo int
+		sueldo, legajo, horas_normales, horas_extras int
+		A[filas][columnas] int
 	)
+
+fmt.Println("Ingrese el numero de legajo del empleado: ")
+fmt.Scan(&legajo)
+fmt.Println("Ingrese las horas normales trabajadas: ")
+fmt.Scan(&horas_normales)
+fmt.Println("Ingrese la cantidad de horas extras trabajadas: ")
+fmt.Scan(&horas_extras)
+
+A[1][]
 }
