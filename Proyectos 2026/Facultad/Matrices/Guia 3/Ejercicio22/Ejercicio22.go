@@ -64,10 +64,8 @@ func main() {
 		fmt.Printf("Trimestre %d: $%.2f\n",
 			j, A[50][j])
 	}
-
 	fmt.Printf("\nTOTAL ANUAL EMPRESA: $%.2f\n", A[50][5])
 	for i := 0; i < 49; i++ {
-
 		for j := 0; j < 49-i; j++ {
 			if A[j][5] < A[j+1][5] {
 				for k := 0; k < 6; k++ {
