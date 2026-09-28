@@ -34,6 +34,7 @@ func main() {
 		A[filas][columnas] int
 	)
 
+	for i:=0;i<empleados;i++{
 fmt.Println("Ingrese el numero de legajo del empleado: ")
 fmt.Scan(&legajo)
 fmt.Println("Ingrese las horas normales trabajadas: ")
@@ -42,4 +43,5 @@ fmt.Println("Ingrese la cantidad de horas extras trabajadas: ")
 fmt.Scan(&horas_extras)
 
 A[1][]
+}
 }
