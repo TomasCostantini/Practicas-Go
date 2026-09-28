@@ -31,17 +31,18 @@ const (
 func main() {
 	var (
 		sueldo, legajo, horas_normales, horas_extras int
-		A[filas][columnas] int
+		A                                            [filas][columnas]int
 	)
 
-	for i:=0;i<empleados;i++{
-fmt.Println("Ingrese el numero de legajo del empleado: ")
-fmt.Scan(&legajo)
-fmt.Println("Ingrese las horas normales trabajadas: ")
-fmt.Scan(&horas_normales)
-fmt.Println("Ingrese la cantidad de horas extras trabajadas: ")
-fmt.Scan(&horas_extras)
+	for i := 0; i < empleados; i++ {
+		fmt.Println("Ingrese el numero de legajo del empleado: ")
+		fmt.Scan(&legajo)
+		A[][]=legajo
+		fmt.Println("Ingrese las horas normales trabajadas: ")
+		fmt.Scan(&horas_normales)
+		fmt.Println("Ingrese la cantidad de horas extras trabajadas: ")
+		fmt.Scan(&horas_extras)
 
-A[1][]
-}
+		
+	}
 }
