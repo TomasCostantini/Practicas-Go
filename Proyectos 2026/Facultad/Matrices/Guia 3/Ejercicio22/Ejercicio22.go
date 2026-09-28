@@ -91,43 +91,31 @@ func main() {
 	fila := -1
 
 	for i := 0; i < 50; i++ {
-
 		if int(A[i][0]) == vendedorBuscado {
 			fila = i
 		}
 	}
-
 	if fila != -1 {
-
 		mayor := A[fila][1]
 		menor := A[fila][1]
-
 		trimestreMayor := 1
 		trimestreMenor := 1
-
 		for j := 2; j <= 4; j++ {
-
 			if A[fila][j] > mayor {
 				mayor = A[fila][j]
 				trimestreMayor = j
 			}
-
 			if A[fila][j] < menor {
 				menor = A[fila][j]
 				trimestreMenor = j
 			}
 		}
-
 		fmt.Printf("\nVendedor %d\n", vendedorBuscado)
-
 		fmt.Printf("Mayor venta: trimestre %d - $%.2f\n",
 			trimestreMayor, mayor)
-
 		fmt.Printf("Menor venta: trimestre %d - $%.2f\n",
 			trimestreMenor, menor)
-
 	} else {
-
 		fmt.Println("El vendedor no existe.")
 	}
 }
