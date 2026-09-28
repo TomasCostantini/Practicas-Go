@@ -1,10 +1,16 @@
 /* Guia de ejercicios GO:
 Ejercicio 22:
-Los vendedores de una empresa, a fin de mes informan todas las ventas que realizaron. Por cada venta se
-conoce el número de vendedor, número de producto vendido y el importe cobrado. Se comercializan 17
-productos, existen 10 vendedores y el fin del ingreso de datos se produce con un número de producto nulo
-(cero). Se necesita almacenar en un matriz PRO los importes totales cobrados por cada producto / vendedor.
-Ordenados en forma descendente por importe total por vendedor e imprimir la matriz ordenada.
+En una empresa se utiliza una matriz A de 51x6 elementos para guardar información correspondiente a las
+ventas de 50 vendedores en los 4 trimestres del año. La primera columna guarda información correspondiente
+al número de vendedor, a partir de la segunda columna y hasta la quinta se guardan las ventas de ese
+vendedor para cada trimestre. Se pide:
+a) Calcular e imprimir el total de ventas
+• de cada vendedor a lo largo del año
+• de cada trimestre
+• anual
+b) Ordenar la matriz A en forma descendente de acuerdo al total de ventas de cada vendedor.
+c) Ingresar un número de vendedor e imprimir en qué trimestre realizó la mayor y la menor venta.
+Nota: La fila 51 y la columna 6 pueden ser utilizadas para los fines que crea conveniente.
 */
 package main
 
@@ -24,13 +30,6 @@ func main() {
 			fmt.Scan(&A[i][j])
 		}
 	}
-
-	// ==========================================
-	// A) TOTALES
-	// ==========================================
-
-	// Total anual de cada vendedor
-	// Se guarda en la columna 5
 	for i := 0; i < 50; i++ {
 
 		A[i][5] = 0
@@ -39,9 +38,6 @@ func main() {
 			A[i][5] += A[i][j]
 		}
 	}
-
-	// Total de cada trimestre
-	// Se guarda en la fila 50
 	for j := 1; j <= 4; j++ {
 
 		A[50][j] = 0
@@ -50,18 +46,11 @@ func main() {
 			A[50][j] += A[i][j]
 		}
 	}
-
-	// Total anual de toda la empresa
 	A[50][5] = 0
 
 	for j := 1; j <= 4; j++ {
 		A[50][5] += A[50][j]
 	}
-
-	// ==========================================
-	// IMPRESIÓN DE TOTALES
-	// ==========================================
-
 	fmt.Println("\n--- TOTAL POR VENDEDOR ---")
 
 	for i := 0; i < 50; i++ {
@@ -77,23 +66,11 @@ func main() {
 	}
 
 	fmt.Printf("\nTOTAL ANUAL EMPRESA: $%.2f\n", A[50][5])
-
-	// ==========================================
-	// B) ORDENAR VENDEDORES DE MAYOR A MENOR
-	// ==========================================
-
 	for i := 0; i < 49; i++ {
 
 		for j := 0; j < 49-i; j++ {
-
-			// Comparamos usando la columna 5,
-			// donde está el total del vendedor
-
 			if A[j][5] < A[j+1][5] {
-
-				// Intercambiamos TODA la fila
 				for k := 0; k < 6; k++ {
-
 					aux := A[j][k]
 					A[j][k] = A[j+1][k]
 					A[j+1][k] = aux
@@ -108,11 +85,6 @@ func main() {
 		fmt.Printf("Vendedor %.0f - Total: $%.2f\n",
 			A[i][0], A[i][5])
 	}
-
-	// ==========================================
-	// C) BUSCAR VENDEDOR
-	// ==========================================
-
 	fmt.Print("\nIngrese número de vendedor a buscar: ")
 	fmt.Scan(&vendedorBuscado)
 
