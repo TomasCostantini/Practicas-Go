@@ -19,12 +19,17 @@ Nro. Legajo           Sueldo
 Resolver el ejercicio en diagrama de flujo y luego programarlo en Go.
 */
 package main
+
 import "fmt"
 
-const(
-	empleados = 67 
+const (
+	empleados = 67
+	filas     = 68
+	columnas  = 3
 )
 
-func main(){
-
+func main() {
+	var (
+		sueldo int
+	)
 }
