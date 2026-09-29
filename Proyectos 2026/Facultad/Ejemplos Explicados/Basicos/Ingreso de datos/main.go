@@ -4,7 +4,7 @@ import "fmt"
 
 func main(){                 
 var(                         //
-	numero int               // Seccion de declaracion de variables
+	numero int               // Seccion de declaracion de variables. "int" para variables numericas y "string" para variables simbolicas
 	letra, simbolo string    //
 )                            //          
 
