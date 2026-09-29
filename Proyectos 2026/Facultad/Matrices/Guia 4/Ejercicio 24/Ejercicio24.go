@@ -47,4 +47,13 @@ func main() {
 		sueldo = (horas_normales*10000 + horas_extras*15000)
 		A[legajo][3] = sueldo
 	}
+
+	for i := 0; i < empleados; i++ {
+
+	}
+
+	fmt.Println("Matiz ordenada")
+	for i := 0; i < len(A); i++ {
+		fmt.Println(A[i])
+	}
 }
