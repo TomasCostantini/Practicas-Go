@@ -20,3 +20,6 @@ d. Ordenar la matriz generada en el punto anterior según el total de votos.
 e. Crear una función que reciba como parámetro un nro. de barrio y devuelva como resultado un vector
 con la cantidad de votos que obtuvieron los 4 partidos en ese barrio.
 */
+package main
+
+import "fmt"
