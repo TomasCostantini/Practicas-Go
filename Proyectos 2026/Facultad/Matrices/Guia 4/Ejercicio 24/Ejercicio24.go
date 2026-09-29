@@ -48,11 +48,15 @@ func main() {
 		A[legajo][3] = sueldo
 	}
 
-	for i := 0; i < empleados; i++ {
-		for z := 0; z < columnas; z++ {
-			aux := A[i][z]
-			A[i][z] = A[i+1][z]
-			A[i+1][z] = aux
+	for i := 1; i < empleados; i++ {
+		for j := 1; j <= empleados-i; j++ {
+			if A[j][3] < A[j+1][3] {
+				for k := 0; k < columnas; k++ {
+					aux := A[j][k]
+					A[j][k] = A[j+1][k]
+					A[j+1][k] = aux
+				}
+			}
 		}
 	}
 
