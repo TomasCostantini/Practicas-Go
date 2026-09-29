@@ -37,12 +37,12 @@ func main() {
 	for i := 0; i < empleados; i++ {
 		fmt.Println("Ingrese el numero de legajo del empleado: ")
 		fmt.Scan(&legajo)
-		A[i][]=legajo
+		A[legajo][1]=legajo
 		fmt.Println("Ingrese las horas normales trabajadas: ")
 		fmt.Scan(&horas_normales)
-		A[][]=
+		A[legajo][3]=horas_normales
 		fmt.Println("Ingrese la cantidad de horas extras trabajadas: ")
 		fmt.Scan(&horas_extras)
-		A[][]=	
+		A[legajo][3]=horas_extras
 	}
 }
