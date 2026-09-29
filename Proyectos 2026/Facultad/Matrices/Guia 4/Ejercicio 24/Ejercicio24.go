@@ -60,8 +60,8 @@ func main() {
 		}
 	}
 
-	fmt.Println("Matiz ordenada")
-	for i := 0; i < len(A); i++ {
+	fmt.Println("Matiz ordenada:")
+	for i := 1; i < len(A); i++ {
 		fmt.Println(A[i])
 	}
 }
