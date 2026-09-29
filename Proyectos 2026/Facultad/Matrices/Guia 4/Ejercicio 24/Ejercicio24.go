@@ -23,8 +23,8 @@ package main
 import "fmt"
 
 const (
-	empleados = 67
-	filas     = 68
+	empleados = 5
+	filas     = 6
 	columnas  = 4
 )
 
@@ -49,7 +49,11 @@ func main() {
 	}
 
 	for i := 0; i < empleados; i++ {
-
+		for z := 0; z < columnas; z++ {
+			aux := A[i][z]
+			A[i][z] = A[i+1][z]
+			A[i+1][z] = aux
+		}
 	}
 
 	fmt.Println("Matiz ordenada")
