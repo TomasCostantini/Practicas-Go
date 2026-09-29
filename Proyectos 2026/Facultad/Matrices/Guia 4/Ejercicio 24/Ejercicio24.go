@@ -45,5 +45,6 @@ func main() {
 		fmt.Scan(&horas_extras)
 		A[legajo][3] = horas_extras
 		sueldo = (horas_normales*10000 + horas_extras*15000)
+		A[legajo][3] = sueldo
 	}
 }
