@@ -25,7 +25,12 @@ const(
 func main(){
 var(
 	A[][columnas] int
+	numer_orden int
 )
 
-for 
+for numer_orden>0{
+fmt.Println("Ingrese el numero de orden: ")
+fmt.Scan(&numer_orden)
+
+}
 }
