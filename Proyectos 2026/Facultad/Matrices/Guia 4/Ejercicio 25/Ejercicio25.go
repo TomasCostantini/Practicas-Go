@@ -20,7 +20,7 @@ package main
 import "fmt"
 
 const (
-	columnas = 6
+	columnas = 7
 )
 
 func main() {
