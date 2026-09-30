@@ -19,9 +19,13 @@ package main
 import "fmt"
 
 const(
-	columnas=6 
+	columnas=5
 )
 
 func main(){
+var(
+	A[][columnas] int
+)
 
+for 
 }
