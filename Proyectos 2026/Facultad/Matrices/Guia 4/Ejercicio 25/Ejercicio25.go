@@ -26,12 +26,24 @@ const (
 func main() {
 	var (
 		A                                  [][columnas]int
+		vector_auxiliar int
 		numero_orden, zona, p1, p2, p3, p4 int
 	)
 
 	for numero_orden > 0 {
 		fmt.Println("Ingrese el numero de orden: ")
 		fmt.Scan(&numero_orden)
+		fmt.Println("Ingrese la zona (1 al 5): ")
+		fmt.Scan(&zona)
+		fmt.Println("Ingrese la cantidad del producto 1: ")
+		fmt.Scan(&p1)
+		fmt.Println("Ingrese la cantidad del producto 2: ")
+		fmt.Scan(&p2)
+		fmt.Println("Ingrese la cantidad del producto 3: ")
+		fmt.Scan(&p3)
+		fmt.Println("Ingrese la cantidad del producto 4: ")
+		fmt.Scan(&p4)
+
 
 	}
 }
