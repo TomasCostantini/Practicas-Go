@@ -19,9 +19,9 @@ package main
 import "fmt"
 
 const(
-	filas= 
 	columnas=6 
 )
+
 func main(){
 
 }
