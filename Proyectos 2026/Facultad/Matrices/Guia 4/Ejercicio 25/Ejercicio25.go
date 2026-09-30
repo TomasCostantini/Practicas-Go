@@ -16,5 +16,9 @@ en nro. de orden. Se desea obtener:
 */
 
 package main
-
 import "fmt"
+
+
+func main(){
+
+}
