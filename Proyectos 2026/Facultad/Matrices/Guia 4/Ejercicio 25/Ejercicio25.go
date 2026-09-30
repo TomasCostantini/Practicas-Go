@@ -16,21 +16,22 @@ en nro. de orden. Se desea obtener:0
 */
 
 package main
+
 import "fmt"
 
-const(
-	columnas=5
+const (
+	columnas = 5
 )
 
-func main(){
-var(
-	A[][columnas] int
-	numer_orden int
-)
+func main() {
+	var (
+		A                                  [][columnas]int
+		numero_orden, zona, p1, p2, p3, p4 int
+	)
 
-for numer_orden>0{
-fmt.Println("Ingrese el numero de orden: ")
-fmt.Scan(&numer_orden)
+	for numero_orden > 0 {
+		fmt.Println("Ingrese el numero de orden: ")
+		fmt.Scan(&numero_orden)
 
-}
+	}
 }
