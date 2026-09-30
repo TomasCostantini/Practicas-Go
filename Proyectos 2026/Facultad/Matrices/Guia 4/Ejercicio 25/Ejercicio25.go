@@ -20,7 +20,7 @@ package main
 import "fmt"
 
 const (
-	columnas = 5
+	columnas = 6
 )
 
 func main() {
@@ -49,5 +49,7 @@ func main() {
 		vector_auxiliar[3] = p2
 		vector_auxiliar[4] = p3
 		vector_auxiliar[5] = p4
+
+		A = append(A, vector_auxiliar)
 	}
 }
