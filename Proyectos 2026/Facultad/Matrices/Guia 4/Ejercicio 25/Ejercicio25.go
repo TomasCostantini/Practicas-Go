@@ -8,7 +8,7 @@ Nro de Orden    Zona     Producto1      Producto2     Producto3      Producto4
 
 Donde cada dato representa una venta y se informa la zona donde se realizó y la cantidad vendida de cada uno de
 los 4 productos. No se sabe la cantidad de órdenes que se van a ingresar, pero el fin de datos es dado con un cero
-en nro. de orden. Se desea obtener:0
+en nro. de orden. Se desea obtener:
 
  El total de ventas por zona y por producto
 
