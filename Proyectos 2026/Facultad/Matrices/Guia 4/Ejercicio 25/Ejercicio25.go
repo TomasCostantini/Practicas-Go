@@ -26,7 +26,7 @@ const (
 func main() {
 	var (
 		A                                  [][columnas]int
-		vector_auxiliar int
+		vector_auxiliar                    [6]int
 		numero_orden, zona, p1, p2, p3, p4 int
 	)
 
@@ -43,7 +43,11 @@ func main() {
 		fmt.Scan(&p3)
 		fmt.Println("Ingrese la cantidad del producto 4: ")
 		fmt.Scan(&p4)
-
-
+		vector_auxiliar[0] = numero_orden
+		vector_auxiliar[1] = zona
+		vector_auxiliar[2] = p1
+		vector_auxiliar[3] = p2
+		vector_auxiliar[4] = p3
+		vector_auxiliar[5] = p4
 	}
 }
