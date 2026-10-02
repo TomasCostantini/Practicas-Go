@@ -26,7 +26,7 @@ const (
 func main() {
 	var (
 		A                                  [][columnas]int
-		vector_auxiliar                    [6]int
+		vector_auxiliar                    [7]int
 		numero_orden, zona, p1, p2, p3, p4 int
 	)
 
@@ -49,6 +49,7 @@ func main() {
 		vector_auxiliar[3] = p2
 		vector_auxiliar[4] = p3
 		vector_auxiliar[5] = p4
+		vector_auxiliar[6] = 0
 
 		A = append(A, vector_auxiliar)
 	}
