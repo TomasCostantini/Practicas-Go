@@ -55,5 +55,6 @@ func main() {
 		vector_auxiliar[6] = suma_productos
 
 		A = append(A, vector_auxiliar)
+		fmt.Print()
 	}
 }
