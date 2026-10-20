@@ -4,7 +4,9 @@ import "fmt"
 
 const (
 	empleados = 15
-	columnas  = 5
+	col_DAT  = 5
+	filas_RES=9
+	col_RES=17
 )
 
 var ()
@@ -12,7 +14,8 @@ var ()
 func main() {
 	var (
 		EMP                                                               [empleados]string
-		DAT                                                               [empleados][columnas]int
+		DAT                                                               [empleados][col_RES]int
+		RES[filas_RES][col_RES] int
 		nombre                                                            string
 		n_cajero, nro_caja, cantidad_productos, importe, horas_trabajadas int
 	)
@@ -42,4 +45,5 @@ func main() {
 		fmt.Println("Ingrese el numero de legajo: ")
 		fmt.Scan(&n_cajero)
 	}
+
 }
